@@ -1,0 +1,471 @@
+2019-08-02 08:45:32,138 - Starting CwcabackApplication on macbookpro.local with PID 4674 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-02 08:45:32,161 - The following profiles are active: dev
+2019-08-02 08:45:32,353 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Fri Aug 02 08:45:32 CST 2019]; root of context hierarchy
+2019-08-02 08:45:34,071 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 08:45:34,145 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 08:45:34,828 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3f26219] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-02 08:45:35,565 - Tomcat initialized with port(s): 8081 (http)
+2019-08-02 08:45:35,583 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-02 08:45:35,618 - Starting service [Tomcat]
+2019-08-02 08:45:35,618 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-02 08:45:35,624 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-02 08:45:35,867 - Initializing Spring embedded WebApplicationContext
+2019-08-02 08:45:35,867 - Root WebApplicationContext: initialization completed in 3515 ms
+2019-08-02 08:45:35,946 - Servlet dispatcherServlet mapped to [/]
+2019-08-02 08:45:35,950 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-02 08:45:35,951 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-02 08:45:35,951 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-02 08:45:35,951 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-02 08:45:36,304 - {dataSource-1} inited
+2019-08-02 08:45:36,541 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-02 08:45:36,557 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-02 08:45:36,650 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-02 08:45:36,652 - HHH000206: hibernate.properties not found
+2019-08-02 08:45:36,703 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-02 08:45:36,990 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-02 08:45:37,628 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 08:45:39,307 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-02 08:45:39,385 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-02 08:45:39,386 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-02 08:45:39,387 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-02 08:45:39,390 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:45:39,390 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:45:39,390 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-02 08:45:39,391 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-02 08:45:39,391 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:45:39,391 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:45:39,391 - Mapped "{[/exam/oneexpress],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.oneexpress(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:45:39,392 - Mapped "{[/exam/updateapplyinfo],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.updateApplyinfo(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:45:39,392 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-02 08:45:39,393 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-02 08:45:39,393 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-02 08:45:39,394 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-02 08:45:39,395 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-02 08:45:39,395 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-02 08:45:39,396 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-02 08:45:39,396 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-02 08:45:39,396 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-02 08:45:39,398 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-02 08:45:39,398 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-02 08:45:39,398 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-02 08:45:39,398 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-02 08:45:39,399 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-02 08:45:39,399 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-02 08:45:39,400 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-02 08:45:39,403 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-02 08:45:39,404 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-02 08:45:39,405 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-02 08:45:39,409 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-02 08:45:39,409 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-02 08:45:39,853 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 08:45:39,924 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Fri Aug 02 08:45:32 CST 2019]; root of context hierarchy
+2019-08-02 08:45:40,003 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 08:45:40,003 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 08:45:40,022 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-02 08:45:41,323 - Registering beans for JMX exposure on startup
+2019-08-02 08:45:41,325 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-02 08:45:41,332 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-02 08:45:41,337 - Starting beans in phase 2147483647
+2019-08-02 08:45:41,337 - Context refreshed
+2019-08-02 08:45:41,355 - Found 1 custom documentation plugin(s)
+2019-08-02 08:45:41,366 - Scanning for api listing references
+2019-08-02 08:45:41,545 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-02 08:45:41,576 - Using a shared selector for servlet write/read
+2019-08-02 08:45:41,594 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-02 08:45:41,600 - Started CwcabackApplication in 10.712 seconds (JVM running for 12.282)
+2019-08-02 08:46:58,360 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Fri Aug 02 08:45:32 CST 2019]; root of context hierarchy
+2019-08-02 08:46:58,364 - Stopping beans in phase 2147483647
+2019-08-02 08:46:58,366 - Unregistering JMX-exposed beans on shutdown
+2019-08-02 08:46:58,367 - Unregistering JMX-exposed beans
+2019-08-02 08:46:58,386 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 08:46:58,391 - {dataSource-1} closed
+2019-08-02 08:47:44,556 - Starting CwcabackApplication on macbookpro.local with PID 4679 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-02 08:47:44,558 - The following profiles are active: dev
+2019-08-02 08:47:44,747 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a266d09: startup date [Fri Aug 02 08:47:44 CST 2019]; root of context hierarchy
+2019-08-02 08:47:45,878 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 08:47:45,903 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 08:47:46,362 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a97320d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-02 08:47:46,867 - Tomcat initialized with port(s): 8081 (http)
+2019-08-02 08:47:46,879 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-02 08:47:46,888 - Starting service [Tomcat]
+2019-08-02 08:47:46,889 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-02 08:47:46,911 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-02 08:47:47,113 - Initializing Spring embedded WebApplicationContext
+2019-08-02 08:47:47,113 - Root WebApplicationContext: initialization completed in 2366 ms
+2019-08-02 08:47:47,192 - Servlet dispatcherServlet mapped to [/]
+2019-08-02 08:47:47,197 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-02 08:47:47,198 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-02 08:47:47,198 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-02 08:47:47,198 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-02 08:47:47,483 - {dataSource-1} inited
+2019-08-02 08:47:47,683 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-02 08:47:47,701 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-02 08:47:47,763 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-02 08:47:47,765 - HHH000206: hibernate.properties not found
+2019-08-02 08:47:47,796 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-02 08:47:47,901 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-02 08:47:48,388 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 08:47:49,556 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-02 08:47:49,625 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-02 08:47:49,627 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-02 08:47:49,627 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-02 08:47:49,630 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:47:49,630 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:47:49,631 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-02 08:47:49,631 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:47:49,631 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-02 08:47:49,631 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:47:49,632 - Mapped "{[/exam/oneexpress],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.oneexpress(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:47:49,632 - Mapped "{[/exam/updateapplyinfo],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.updateApplyinfo(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 08:47:49,632 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-02 08:47:49,633 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-02 08:47:49,634 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-02 08:47:49,634 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-02 08:47:49,635 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-02 08:47:49,636 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-02 08:47:49,636 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-02 08:47:49,636 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-02 08:47:49,637 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-02 08:47:49,641 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-02 08:47:49,641 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-02 08:47:49,642 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-02 08:47:49,642 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-02 08:47:49,642 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-02 08:47:49,642 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-02 08:47:49,644 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-02 08:47:49,647 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-02 08:47:49,647 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-02 08:47:49,648 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-02 08:47:49,652 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-02 08:47:49,653 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-02 08:47:49,966 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 08:47:50,021 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a266d09: startup date [Fri Aug 02 08:47:44 CST 2019]; root of context hierarchy
+2019-08-02 08:47:50,075 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 08:47:50,076 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 08:47:50,093 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-02 08:47:51,038 - Registering beans for JMX exposure on startup
+2019-08-02 08:47:51,040 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-02 08:47:51,047 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-02 08:47:51,052 - Starting beans in phase 2147483647
+2019-08-02 08:47:51,052 - Context refreshed
+2019-08-02 08:47:51,066 - Found 1 custom documentation plugin(s)
+2019-08-02 08:47:51,076 - Scanning for api listing references
+2019-08-02 08:47:51,238 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-02 08:47:51,268 - Using a shared selector for servlet write/read
+2019-08-02 08:47:51,284 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-02 08:47:51,294 - Started CwcabackApplication in 7.538 seconds (JVM running for 8.748)
+2019-08-02 08:48:01,407 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-02 08:48:01,408 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-02 08:48:01,432 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-08-02 08:48:01,770 - Starting without optional epoll library
+2019-08-02 08:48:01,772 - Starting without optional kqueue library
+2019-08-02 08:48:02,501 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706882489}
+2019-08-02 08:48:02,846 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:48:13,564 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706893564}
+2019-08-02 08:48:13,690 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:48:29,872 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706909872}
+2019-08-02 08:48:30,142 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:52:29,838 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707149838}
+2019-08-02 08:52:29,978 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:53:29,000 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707209000}
+2019-08-02 08:53:29,171 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:53:37,123 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707217123}
+2019-08-02 08:53:37,259 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:54:22,693 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707262692}
+2019-08-02 08:54:22,840 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:55:07,765 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707307765}
+2019-08-02 08:55:07,886 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:56:19,529 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707379529}
+2019-08-02 08:56:19,653 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:56:46,043 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707406043}
+2019-08-02 08:56:46,168 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:57:21,483 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707441483}
+2019-08-02 08:57:21,640 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:57:42,135 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707462135}
+2019-08-02 08:57:42,248 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:59:12,063 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707552063}
+2019-08-02 08:59:12,239 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:59:32,573 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707572572}
+2019-08-02 08:59:32,747 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:59:55,875 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707595875}
+2019-08-02 08:59:56,030 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:00:04,559 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707604559}
+2019-08-02 09:00:09,372 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707609372}
+2019-08-02 09:00:09,520 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:01:57,437 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707717437}
+2019-08-02 09:01:57,571 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:03:24,598 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707804598}
+2019-08-02 09:03:24,721 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:03:30,792 - {"action":"GetExamInfo","info":[{"auditDept":0}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564707810791}
+2019-08-02 09:03:30,905 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:06:47,427 - {"action":"GetExamInfo","info":[{"auditDept":0}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564708007426}
+2019-08-02 09:06:47,632 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:07:44,121 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a266d09: startup date [Fri Aug 02 08:47:44 CST 2019]; root of context hierarchy
+2019-08-02 09:07:44,137 - Stopping beans in phase 2147483647
+2019-08-02 09:07:44,141 - Unregistering JMX-exposed beans on shutdown
+2019-08-02 09:07:44,142 - Unregistering JMX-exposed beans
+2019-08-02 09:07:45,278 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 09:07:45,286 - {dataSource-1} closed
+2019-08-02 09:07:55,023 - Starting CwcabackApplication on macbookpro.local with PID 4704 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-02 09:07:55,026 - The following profiles are active: dev
+2019-08-02 09:07:55,189 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21baa903: startup date [Fri Aug 02 09:07:55 CST 2019]; root of context hierarchy
+2019-08-02 09:07:56,264 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 09:07:56,297 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 09:07:56,891 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52417046] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-02 09:07:57,570 - Tomcat initialized with port(s): 8081 (http)
+2019-08-02 09:07:57,588 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-02 09:07:57,599 - Starting service [Tomcat]
+2019-08-02 09:07:57,599 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-02 09:07:57,604 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-02 09:07:57,848 - Initializing Spring embedded WebApplicationContext
+2019-08-02 09:07:57,849 - Root WebApplicationContext: initialization completed in 2660 ms
+2019-08-02 09:07:57,940 - Servlet dispatcherServlet mapped to [/]
+2019-08-02 09:07:57,946 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-02 09:07:57,946 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-02 09:07:57,946 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-02 09:07:57,946 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-02 09:07:58,294 - {dataSource-1} inited
+2019-08-02 09:07:58,540 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-02 09:07:58,552 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-02 09:07:58,637 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-02 09:07:58,639 - HHH000206: hibernate.properties not found
+2019-08-02 09:07:58,698 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-02 09:07:58,932 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-02 09:07:59,813 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 09:08:01,667 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-02 09:08:01,757 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-02 09:08:01,758 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-02 09:08:01,759 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-02 09:08:01,762 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:08:01,762 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:08:01,763 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-02 09:08:01,763 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-02 09:08:01,763 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:08:01,764 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:08:01,764 - Mapped "{[/exam/oneexpress],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.oneexpress(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:08:01,764 - Mapped "{[/exam/updateapplyinfo],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.updateApplyinfo(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:08:01,765 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-02 09:08:01,765 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-02 09:08:01,766 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-02 09:08:01,766 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-02 09:08:01,767 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-02 09:08:01,767 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-02 09:08:01,768 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-02 09:08:01,768 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-02 09:08:01,768 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-02 09:08:01,769 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-02 09:08:01,770 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-02 09:08:01,770 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-02 09:08:01,770 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-02 09:08:01,770 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-02 09:08:01,771 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-02 09:08:01,772 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-02 09:08:01,775 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-02 09:08:01,776 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-02 09:08:01,777 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-02 09:08:01,781 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-02 09:08:01,782 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-02 09:08:02,194 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 09:08:02,274 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21baa903: startup date [Fri Aug 02 09:07:55 CST 2019]; root of context hierarchy
+2019-08-02 09:08:02,349 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 09:08:02,349 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 09:08:02,375 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-02 09:08:03,510 - Registering beans for JMX exposure on startup
+2019-08-02 09:08:03,517 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-02 09:08:03,528 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-02 09:08:03,536 - Starting beans in phase 2147483647
+2019-08-02 09:08:03,536 - Context refreshed
+2019-08-02 09:08:03,567 - Found 1 custom documentation plugin(s)
+2019-08-02 09:08:03,588 - Scanning for api listing references
+2019-08-02 09:08:03,887 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-02 09:08:03,916 - Using a shared selector for servlet write/read
+2019-08-02 09:08:03,934 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-02 09:08:03,941 - Started CwcabackApplication in 9.865 seconds (JVM running for 11.705)
+2019-08-02 09:08:08,719 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-02 09:08:08,719 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-02 09:08:08,765 - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2019-08-02 09:08:09,155 - Starting without optional epoll library
+2019-08-02 09:08:09,157 - Starting without optional kqueue library
+2019-08-02 09:08:53,485 - {"action":"GetExamInfo","info":[{"auditDept":0}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564708133455}
+2019-08-02 09:08:53,910 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:08:54,514 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21baa903: startup date [Fri Aug 02 09:07:55 CST 2019]; root of context hierarchy
+2019-08-02 09:08:54,517 - Stopping beans in phase 2147483647
+2019-08-02 09:08:54,518 - Unregistering JMX-exposed beans on shutdown
+2019-08-02 09:08:54,519 - Unregistering JMX-exposed beans
+2019-08-02 09:08:55,660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 09:08:55,667 - {dataSource-1} closed
+2019-08-02 09:09:00,275 - Starting CwcabackApplication on macbookpro.local with PID 4707 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-02 09:09:00,285 - The following profiles are active: dev
+2019-08-02 09:09:00,731 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32c8e539: startup date [Fri Aug 02 09:09:00 CST 2019]; root of context hierarchy
+2019-08-02 09:09:02,382 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 09:09:02,419 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-02 09:09:02,977 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a76fe78b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-02 09:09:03,658 - Tomcat initialized with port(s): 8081 (http)
+2019-08-02 09:09:03,673 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-02 09:09:03,686 - Starting service [Tomcat]
+2019-08-02 09:09:03,686 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-02 09:09:03,692 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-02 09:09:03,965 - Initializing Spring embedded WebApplicationContext
+2019-08-02 09:09:03,967 - Root WebApplicationContext: initialization completed in 3236 ms
+2019-08-02 09:09:04,063 - Servlet dispatcherServlet mapped to [/]
+2019-08-02 09:09:04,069 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-02 09:09:04,069 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-02 09:09:04,069 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-02 09:09:04,069 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-02 09:09:04,415 - {dataSource-1} inited
+2019-08-02 09:09:04,672 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-02 09:09:04,687 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-02 09:09:04,775 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-02 09:09:04,777 - HHH000206: hibernate.properties not found
+2019-08-02 09:09:04,832 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-02 09:09:05,050 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-02 09:09:05,632 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 09:09:07,030 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-02 09:09:07,118 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-02 09:09:07,119 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-02 09:09:07,120 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-02 09:09:07,123 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:09:07,123 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:09:07,124 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-02 09:09:07,124 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-02 09:09:07,124 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:09:07,124 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:09:07,125 - Mapped "{[/exam/oneexpress],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.oneexpress(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:09:07,125 - Mapped "{[/exam/updateapplyinfo],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.updateApplyinfo(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-02 09:09:07,125 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-02 09:09:07,126 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-02 09:09:07,126 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-02 09:09:07,127 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-02 09:09:07,128 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-02 09:09:07,128 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-02 09:09:07,128 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-02 09:09:07,129 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-02 09:09:07,129 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-02 09:09:07,130 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-02 09:09:07,131 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-02 09:09:07,131 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-02 09:09:07,131 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-02 09:09:07,132 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-02 09:09:07,132 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-02 09:09:07,133 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-02 09:09:07,136 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-02 09:09:07,137 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-02 09:09:07,138 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-02 09:09:07,143 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-02 09:09:07,143 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-02 09:09:07,550 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 09:09:07,674 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32c8e539: startup date [Fri Aug 02 09:09:00 CST 2019]; root of context hierarchy
+2019-08-02 09:09:07,749 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 09:09:07,749 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-02 09:09:07,776 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-02 09:09:08,794 - Registering beans for JMX exposure on startup
+2019-08-02 09:09:08,796 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-02 09:09:08,805 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-02 09:09:08,810 - Starting beans in phase 2147483647
+2019-08-02 09:09:08,811 - Context refreshed
+2019-08-02 09:09:08,829 - Found 1 custom documentation plugin(s)
+2019-08-02 09:09:08,844 - Scanning for api listing references
+2019-08-02 09:09:09,085 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-02 09:09:09,119 - Using a shared selector for servlet write/read
+2019-08-02 09:09:09,137 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-02 09:09:09,144 - Started CwcabackApplication in 10.632 seconds (JVM running for 12.239)
+2019-08-02 09:09:15,806 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-02 09:09:15,807 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-02 09:09:15,859 - FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+2019-08-02 09:09:16,202 - Starting without optional epoll library
+2019-08-02 09:09:16,205 - Starting without optional kqueue library
+2019-08-02 09:09:16,440 - {"action":"GetExamInfo","info":[{"auditDept":0}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564708156423}
+2019-08-02 09:09:16,892 - orderId={"156204964899381508":"未发货","156206949815255250":"未发货"}
+2019-08-02 09:09:26,738 - {"action":"GetExamInfo","info":[{"auditDept":1}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564708166738}
+2019-08-02 09:09:26,877 - orderId={"156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货"}
+2019-08-02 09:18:12,379 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564708692379}
+2019-08-02 09:18:12,560 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:27:54,657 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564709274656}
+2019-08-02 09:27:54,936 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:34:02,624 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564709642623}
+2019-08-02 09:34:02,825 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:34:19,441 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564709659441}
+2019-08-02 09:34:19,546 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:35:13,527 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564709713526}
+2019-08-02 09:35:13,659 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:39:57,583 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564709997583}
+2019-08-02 09:39:57,711 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 09:40:20,837 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564710020837}
+2019-08-02 09:40:20,942 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:07:51,631 - {"action":"ToApplyProcess","info":["156206858113402733"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564711671630}
+2019-08-02 10:09:10,474 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564711750474}
+2019-08-02 10:09:10,629 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:10:06,580 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564711806580}
+2019-08-02 10:11:28,255 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564711888255}
+2019-08-02 10:11:28,739 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:18:39,606 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564712319606}
+2019-08-02 10:18:42,002 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564712322001}
+2019-08-02 10:18:42,322 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:33:56,089 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564713236089}
+2019-08-02 10:37:49,328 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564713469328}
+2019-08-02 10:37:49,471 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:37:53,904 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564713473904}
+2019-08-02 10:37:55,998 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564713475998}
+2019-08-02 10:37:56,114 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:42:25,900 - {"action":"ToApplyProcess","info":["156206858113402733"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564713745900}
+2019-08-02 10:42:29,148 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564713749148}
+2019-08-02 10:42:29,270 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:46:21,065 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564713981065}
+2019-08-02 10:46:21,203 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 10:49:56,127 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564714196127}
+2019-08-02 10:49:56,244 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 11:07:26,771 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564715246769}
+2019-08-02 11:07:26,996 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 11:08:04,281 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564715284281}
+2019-08-02 11:08:04,402 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 11:08:09,111 - {"action":"updateApplyinfo","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564715289111}
+2019-08-02 11:08:09,157 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564715289157}
+2019-08-02 11:08:09,258 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 11:11:06,098 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564715466097}
+2019-08-02 11:11:06,262 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 11:16:53,240 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564715813240}
+2019-08-02 11:16:53,781 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 11:19:00,974 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564715940974}
+2019-08-02 11:19:01,105 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 14:43:26,303 - 【token过期/未登录】Redis中查不到token
+2019-08-02 14:46:04,564 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564728364564}
+2019-08-02 14:46:04,780 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 14:47:18,986 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564728438986}
+2019-08-02 14:47:19,144 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 14:50:26,421 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564728626421}
+2019-08-02 14:50:26,593 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 14:51:13,365 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564728673365}
+2019-08-02 14:51:13,497 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 14:51:28,748 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564728688748}
+2019-08-02 14:51:28,921 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 14:51:55,379 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564728715379}
+2019-08-02 14:51:55,828 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 14:52:21,955 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564728741955}
+2019-08-02 14:52:22,083 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 17:42:16,886 - 【token过期/未登录】Redis中查不到token
+2019-08-05 09:12:32,504 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564967552503}
+2019-08-05 09:12:32,641 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-05 09:13:07,535 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564967587535}
+2019-08-05 09:13:07,681 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-05 09:14:58,547 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564967698547}
+2019-08-05 09:14:58,659 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-05 09:15:00,494 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564967700494}
+2019-08-05 09:15:00,580 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-05 09:25:35,997 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564968335997}
+2019-08-05 09:25:36,163 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-05 09:27:28,338 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564968448338}
+2019-08-05 09:27:29,109 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-05 09:27:32,019 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32c8e539: startup date [Fri Aug 02 09:09:00 CST 2019]; root of context hierarchy
+2019-08-05 09:27:32,106 - Stopping beans in phase 2147483647
+2019-08-05 09:27:32,117 - Unregistering JMX-exposed beans on shutdown
+2019-08-05 09:27:32,121 - Unregistering JMX-exposed beans
+2019-08-05 09:27:33,295 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-05 09:27:33,331 - {dataSource-1} closed

@@ -1,0 +1,611 @@
+2019-08-01 09:38:41,645 - Starting CwcabackApplication on macbookpro.local with PID 3541 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-01 09:38:41,649 - The following profiles are active: dev
+2019-08-01 09:38:41,853 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 09:38:41 CST 2019]; root of context hierarchy
+2019-08-01 09:38:43,269 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 09:38:43,318 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 09:38:43,884 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7ec77375] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-01 09:38:45,152 - Tomcat initialized with port(s): 8081 (http)
+2019-08-01 09:38:45,189 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-01 09:38:45,212 - Starting service [Tomcat]
+2019-08-01 09:38:45,213 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-01 09:38:45,223 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-01 09:38:45,604 - Initializing Spring embedded WebApplicationContext
+2019-08-01 09:38:45,604 - Root WebApplicationContext: initialization completed in 3751 ms
+2019-08-01 09:38:45,704 - Servlet dispatcherServlet mapped to [/]
+2019-08-01 09:38:45,709 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-01 09:38:45,709 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-01 09:38:45,709 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-01 09:38:45,710 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-01 09:38:46,088 - {dataSource-1} inited
+2019-08-01 09:38:46,348 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-01 09:38:46,369 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-01 09:38:46,483 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-01 09:38:46,485 - HHH000206: hibernate.properties not found
+2019-08-01 09:38:46,627 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-01 09:38:46,907 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-01 09:38:47,601 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 09:38:49,088 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-01 09:38:49,214 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-01 09:38:49,215 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-01 09:38:49,215 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-01 09:38:49,219 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 09:38:49,219 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 09:38:49,219 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-01 09:38:49,220 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 09:38:49,220 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-01 09:38:49,220 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 09:38:49,221 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-01 09:38:49,222 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-01 09:38:49,222 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-01 09:38:49,223 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-01 09:38:49,224 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-01 09:38:49,224 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-01 09:38:49,225 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-01 09:38:49,225 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-01 09:38:49,225 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-01 09:38:49,227 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-01 09:38:49,228 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-01 09:38:49,229 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-01 09:38:49,229 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-01 09:38:49,230 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-01 09:38:49,230 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-01 09:38:49,231 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-01 09:38:49,236 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-01 09:38:49,237 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-01 09:38:49,239 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-01 09:38:49,245 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-01 09:38:49,245 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-01 09:38:49,714 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 09:38:49,787 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 09:38:41 CST 2019]; root of context hierarchy
+2019-08-01 09:38:49,853 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 09:38:49,854 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 09:38:49,874 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-01 09:38:51,127 - Registering beans for JMX exposure on startup
+2019-08-01 09:38:51,130 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-01 09:38:51,142 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-01 09:38:51,150 - Starting beans in phase 2147483647
+2019-08-01 09:38:51,150 - Context refreshed
+2019-08-01 09:38:51,174 - Found 1 custom documentation plugin(s)
+2019-08-01 09:38:51,186 - Scanning for api listing references
+2019-08-01 09:38:51,757 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-01 09:38:51,791 - Using a shared selector for servlet write/read
+2019-08-01 09:38:51,814 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-01 09:38:51,827 - Started CwcabackApplication in 11.318 seconds (JVM running for 13.334)
+2019-08-01 09:39:54,121 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-01 09:39:54,121 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-01 09:39:54,154 - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2019-08-01 09:39:54,416 - Starting without optional epoll library
+2019-08-01 09:39:54,418 - Starting without optional kqueue library
+2019-08-01 09:39:54,562 - 【token过期/未登录】Redis中查不到token
+2019-08-01 09:40:09,056 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564623609043}
+2019-08-01 09:40:09,897 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:40:45,617 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564623645617}
+2019-08-01 09:40:45,752 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:45:39,728 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564623939728}
+2019-08-01 09:45:40,017 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:47:36,773 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624056772}
+2019-08-01 09:47:36,935 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:48:23,020 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624103020}
+2019-08-01 09:48:23,180 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:49:02,491 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624142491}
+2019-08-01 09:49:03,159 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:52:14,373 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624334373}
+2019-08-01 09:52:14,513 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:52:37,610 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624357610}
+2019-08-01 09:52:37,744 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:55:30,599 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624530599}
+2019-08-01 09:55:30,726 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 09:56:01,412 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624561411}
+2019-08-01 09:56:01,556 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:02:24,542 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564624944542}
+2019-08-01 10:02:24,661 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:04:42,317 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625082316}
+2019-08-01 10:04:42,440 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:04:53,031 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625093031}
+2019-08-01 10:04:53,161 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:05:11,840 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625111839}
+2019-08-01 10:05:11,963 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:09:17,169 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625357169}
+2019-08-01 10:09:17,321 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:11:14,752 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625474752}
+2019-08-01 10:11:14,896 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:12:24,860 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625544860}
+2019-08-01 10:12:25,109 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:12:42,409 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625562409}
+2019-08-01 10:12:42,544 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:14:02,284 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625642284}
+2019-08-01 10:14:02,401 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:15:03,194 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625703194}
+2019-08-01 10:15:03,343 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:15:13,857 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625713857}
+2019-08-01 10:15:13,980 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:19:02,624 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625942621}
+2019-08-01 10:19:07,503 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625947503}
+2019-08-01 10:19:07,663 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:19:44,851 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564625984851}
+2019-08-01 10:19:44,976 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:20:01,430 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564626001430}
+2019-08-01 10:20:01,559 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:20:11,273 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564626011273}
+2019-08-01 10:20:11,392 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:20:19,450 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564626019450}
+2019-08-01 10:20:19,578 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:20:28,053 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564626028053}
+2019-08-01 10:20:28,202 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:20:36,357 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564626036357}
+2019-08-01 10:20:36,468 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:20:44,271 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564626044271}
+2019-08-01 10:20:44,401 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:38:12,570 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564627092569}
+2019-08-01 10:38:12,708 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 10:49:22,330 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564627762330}
+2019-08-01 10:49:22,697 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:06:13,351 - 【token过期/未登录】Redis中查不到token
+2019-08-01 13:06:15,331 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564635975331}
+2019-08-01 13:06:15,472 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:09:01,840 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564636141840}
+2019-08-01 13:09:01,974 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:11:02,695 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564636262695}
+2019-08-01 13:11:02,829 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:11:28,718 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564636288718}
+2019-08-01 13:11:28,869 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:12:01,054 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564636321054}
+2019-08-01 13:12:01,222 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:13:33,233 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564636413233}
+2019-08-01 13:13:33,352 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:14:04,804 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564636444804}
+2019-08-01 13:14:05,088 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:26:55,529 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637215529}
+2019-08-01 13:26:55,675 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:27:15,181 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637235180}
+2019-08-01 13:27:15,320 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:27:54,292 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637274292}
+2019-08-01 13:27:54,406 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:30:43,573 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637443573}
+2019-08-01 13:30:43,716 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:31:42,167 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637502167}
+2019-08-01 13:31:42,276 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:32:20,858 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637540858}
+2019-08-01 13:32:20,954 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:33:40,535 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637620535}
+2019-08-01 13:33:40,646 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:36:00,485 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637760485}
+2019-08-01 13:36:00,592 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:36:07,165 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637767165}
+2019-08-01 13:36:07,272 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:36:30,846 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637790846}
+2019-08-01 13:36:30,946 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:37:09,039 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637829039}
+2019-08-01 13:37:09,182 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:37:43,726 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564637863726}
+2019-08-01 13:37:43,853 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:48:02,656 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564638482655}
+2019-08-01 13:48:02,884 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 13:51:11,635 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564638671635}
+2019-08-01 13:51:11,738 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:04:20,059 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639460057}
+2019-08-01 14:04:20,190 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:09:06,319 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639746319}
+2019-08-01 14:09:06,454 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:10:18,698 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639818698}
+2019-08-01 14:10:18,846 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:11:11,663 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639871663}
+2019-08-01 14:11:11,775 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:11:26,704 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639886704}
+2019-08-01 14:11:26,816 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:11:40,819 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639900819}
+2019-08-01 14:11:41,294 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:12:13,300 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639933300}
+2019-08-01 14:12:13,419 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:12:38,086 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564639958086}
+2019-08-01 14:12:38,206 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:14:43,519 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564640083519}
+2019-08-01 14:14:43,618 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:15:20,517 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564640120517}
+2019-08-01 14:15:20,618 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:19:39,190 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564640379190}
+2019-08-01 14:19:43,995 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564640383994}
+2019-08-01 14:19:44,106 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:20:02,826 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564640402825}
+2019-08-01 14:20:04,936 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564640404936}
+2019-08-01 14:20:05,306 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:36:10,544 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564641370543}
+2019-08-01 14:36:10,678 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:46:53,863 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642013863}
+2019-08-01 14:46:54,113 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:47:06,179 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 09:38:41 CST 2019]; root of context hierarchy
+2019-08-01 14:47:06,289 - Stopping beans in phase 2147483647
+2019-08-01 14:47:06,305 - Unregistering JMX-exposed beans on shutdown
+2019-08-01 14:47:06,308 - Unregistering JMX-exposed beans
+2019-08-01 14:47:07,501 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 14:47:07,553 - {dataSource-1} closed
+2019-08-01 14:47:14,773 - Starting CwcabackApplication on macbookpro with PID 4078 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-01 14:47:14,776 - The following profiles are active: dev
+2019-08-01 14:47:14,924 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 14:47:14 CST 2019]; root of context hierarchy
+2019-08-01 14:47:16,418 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 14:47:16,450 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 14:47:16,938 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a97320d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-01 14:47:17,548 - Tomcat initialized with port(s): 8081 (http)
+2019-08-01 14:47:17,561 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-01 14:47:17,571 - Starting service [Tomcat]
+2019-08-01 14:47:17,572 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-01 14:47:17,595 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-01 14:47:17,801 - Initializing Spring embedded WebApplicationContext
+2019-08-01 14:47:17,801 - Root WebApplicationContext: initialization completed in 2877 ms
+2019-08-01 14:47:17,895 - Servlet dispatcherServlet mapped to [/]
+2019-08-01 14:47:17,898 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-01 14:47:17,899 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-01 14:47:17,899 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-01 14:47:17,899 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-01 14:47:18,211 - {dataSource-1} inited
+2019-08-01 14:47:18,426 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-01 14:47:18,449 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-01 14:47:18,507 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-01 14:47:18,508 - HHH000206: hibernate.properties not found
+2019-08-01 14:47:18,546 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-01 14:47:18,676 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-01 14:47:19,224 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 14:47:20,483 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-01 14:47:20,550 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-01 14:47:20,551 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-01 14:47:20,551 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-01 14:47:20,554 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:47:20,554 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:47:20,555 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-01 14:47:20,555 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:47:20,556 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-01 14:47:20,556 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:47:20,556 - Mapped "{[/exam/oneexpress],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.oneexpress(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:47:20,556 - Mapped "{[/exam/updateapplyinfo],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.updateApplyinfo(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:47:20,557 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-01 14:47:20,557 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-01 14:47:20,558 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-01 14:47:20,558 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-01 14:47:20,559 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-01 14:47:20,560 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-01 14:47:20,560 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-01 14:47:20,560 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-01 14:47:20,560 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-01 14:47:20,562 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-01 14:47:20,562 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-01 14:47:20,562 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-01 14:47:20,563 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-01 14:47:20,563 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-01 14:47:20,563 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-01 14:47:20,565 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-01 14:47:20,567 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-01 14:47:20,568 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-01 14:47:20,569 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-01 14:47:20,573 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-01 14:47:20,573 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-01 14:47:20,911 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 14:47:20,968 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 14:47:14 CST 2019]; root of context hierarchy
+2019-08-01 14:47:21,027 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 14:47:21,027 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 14:47:21,044 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-01 14:47:22,059 - Registering beans for JMX exposure on startup
+2019-08-01 14:47:22,061 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-01 14:47:22,068 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-01 14:47:22,072 - Starting beans in phase 2147483647
+2019-08-01 14:47:22,072 - Context refreshed
+2019-08-01 14:47:22,087 - Found 1 custom documentation plugin(s)
+2019-08-01 14:47:22,098 - Scanning for api listing references
+2019-08-01 14:47:22,295 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-01 14:47:22,331 - Using a shared selector for servlet write/read
+2019-08-01 14:47:22,360 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-01 14:47:22,367 - Started CwcabackApplication in 8.424 seconds (JVM running for 9.709)
+2019-08-01 14:48:48,345 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-01 14:48:48,346 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-01 14:48:48,392 - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+2019-08-01 14:48:48,593 - Starting without optional epoll library
+2019-08-01 14:48:48,595 - Starting without optional kqueue library
+2019-08-01 14:48:49,291 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642129278}
+2019-08-01 14:48:49,609 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:49:42,658 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642182658}
+2019-08-01 14:49:42,796 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:57:59,364 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642679363}
+2019-08-01 14:57:59,519 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 14:58:00,161 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 14:47:14 CST 2019]; root of context hierarchy
+2019-08-01 14:58:00,179 - Stopping beans in phase 2147483647
+2019-08-01 14:58:00,182 - Unregistering JMX-exposed beans on shutdown
+2019-08-01 14:58:00,186 - Unregistering JMX-exposed beans
+2019-08-01 14:58:01,349 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 14:58:01,359 - {dataSource-1} closed
+2019-08-01 14:58:06,776 - Starting CwcabackApplication on macbookpro with PID 4087 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-01 14:58:06,785 - The following profiles are active: dev
+2019-08-01 14:58:06,955 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d8bd0de: startup date [Thu Aug 01 14:58:06 CST 2019]; root of context hierarchy
+2019-08-01 14:58:08,093 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 14:58:08,125 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 14:58:08,628 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$383f35a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-01 14:58:09,205 - Tomcat initialized with port(s): 8081 (http)
+2019-08-01 14:58:09,219 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-01 14:58:09,229 - Starting service [Tomcat]
+2019-08-01 14:58:09,229 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-01 14:58:09,233 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-01 14:58:09,319 - Initializing Spring embedded WebApplicationContext
+2019-08-01 14:58:09,320 - Root WebApplicationContext: initialization completed in 2364 ms
+2019-08-01 14:58:09,390 - Servlet dispatcherServlet mapped to [/]
+2019-08-01 14:58:09,394 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-01 14:58:09,394 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-01 14:58:09,395 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-01 14:58:09,395 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-01 14:58:09,809 - {dataSource-1} inited
+2019-08-01 14:58:10,014 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-01 14:58:10,028 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-01 14:58:10,089 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-01 14:58:10,091 - HHH000206: hibernate.properties not found
+2019-08-01 14:58:10,129 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-01 14:58:10,258 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-01 14:58:10,724 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 14:58:11,983 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-01 14:58:12,054 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-01 14:58:12,055 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-01 14:58:12,055 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-01 14:58:12,058 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:58:12,059 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:58:12,059 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-01 14:58:12,059 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:58:12,060 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-01 14:58:12,060 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:58:12,060 - Mapped "{[/exam/oneexpress],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.oneexpress(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:58:12,060 - Mapped "{[/exam/updateapplyinfo],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.updateApplyinfo(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 14:58:12,061 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-01 14:58:12,062 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-01 14:58:12,062 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-01 14:58:12,062 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-01 14:58:12,063 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-01 14:58:12,064 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-01 14:58:12,064 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-01 14:58:12,064 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-01 14:58:12,065 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-01 14:58:12,066 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-01 14:58:12,066 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-01 14:58:12,066 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-01 14:58:12,067 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-01 14:58:12,067 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-01 14:58:12,067 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-01 14:58:12,068 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-01 14:58:12,071 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-01 14:58:12,072 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-01 14:58:12,073 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-01 14:58:12,077 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-01 14:58:12,077 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-01 14:58:12,412 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 14:58:12,469 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d8bd0de: startup date [Thu Aug 01 14:58:06 CST 2019]; root of context hierarchy
+2019-08-01 14:58:12,545 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 14:58:12,545 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 14:58:12,570 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-01 14:58:13,355 - Registering beans for JMX exposure on startup
+2019-08-01 14:58:13,357 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-01 14:58:13,364 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-01 14:58:13,368 - Starting beans in phase 2147483647
+2019-08-01 14:58:13,368 - Context refreshed
+2019-08-01 14:58:13,382 - Found 1 custom documentation plugin(s)
+2019-08-01 14:58:13,393 - Scanning for api listing references
+2019-08-01 14:58:13,873 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-01 14:58:13,898 - Using a shared selector for servlet write/read
+2019-08-01 14:58:13,911 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-01 14:58:13,917 - Started CwcabackApplication in 7.915 seconds (JVM running for 8.957)
+2019-08-01 14:59:02,270 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-01 14:59:02,271 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-01 14:59:02,294 - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2019-08-01 14:59:02,523 - Starting without optional epoll library
+2019-08-01 14:59:02,525 - Starting without optional kqueue library
+2019-08-01 14:59:03,358 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642743337}
+2019-08-01 14:59:03,685 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:01:20,275 - {"action":"GetExamInfo","info":[{"isPass":3}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642880275}
+2019-08-01 15:01:20,403 - orderId={"156206771017815541":"未发货"}
+2019-08-01 15:01:24,876 - {"action":"GetExamInfo","info":[{"isPass":4}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642884876}
+2019-08-01 15:01:24,983 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:01:32,923 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642892923}
+2019-08-01 15:01:33,049 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:01:57,933 - {"action":"updateApplyinfo","info":["156206461012647864"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642917933}
+2019-08-01 15:02:13,731 - {"action":"updateApplyinfo","info":["156206461012647864"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564642933731}
+2019-08-01 15:03:26,679 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643006679}
+2019-08-01 15:03:26,799 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:03:30,612 - {"action":"updateApplyinfo","info":["156206461012647864"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643010612}
+2019-08-01 15:03:37,965 - {"action":"updateApplyinfo","info":["156206461012647864"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643017965}
+2019-08-01 15:03:53,068 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643033068}
+2019-08-01 15:03:55,179 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643035178}
+2019-08-01 15:03:55,281 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:05:43,008 - {"action":"updateApplyinfo","info":["156206461012647864"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643143007}
+2019-08-01 15:10:16,512 - 【token过期/未登录】Redis中查不到token
+2019-08-01 15:10:18,531 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643418531}
+2019-08-01 15:10:18,641 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:11:24,775 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643484775}
+2019-08-01 15:11:24,913 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:12:06,366 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643526366}
+2019-08-01 15:12:06,497 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:12:09,110 - {"action":"updateApplyinfo","info":["156206461012647864"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643529110}
+2019-08-01 15:14:56,953 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643696953}
+2019-08-01 15:14:57,168 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:14:59,802 - {"action":"updateApplyinfo","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643699802}
+2019-08-01 15:14:59,845 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564643699845}
+2019-08-01 15:14:59,964 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:23:11,805 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564644191805}
+2019-08-01 15:23:15,463 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564644195463}
+2019-08-01 15:23:15,592 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:26:48,879 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564644408879}
+2019-08-01 15:26:49,122 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:39:16,765 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564645156764}
+2019-08-01 15:39:16,900 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:39:19,228 - {"action":"updateApplyinfo","info":["156206461012647864"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564645159227}
+2019-08-01 15:39:19,260 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564645159260}
+2019-08-01 15:39:19,379 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:39:25,544 - {"action":"updateApplyinfo","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564645165544}
+2019-08-01 15:39:25,585 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564645165585}
+2019-08-01 15:39:25,693 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:42:03,617 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564645323617}
+2019-08-01 15:42:03,731 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:51:47,428 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564645907428}
+2019-08-01 15:51:47,535 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:55:12,910 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646112910}
+2019-08-01 15:55:13,039 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:56:36,459 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646196459}
+2019-08-01 15:56:41,414 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646201414}
+2019-08-01 15:56:41,512 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 15:56:55,071 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646215071}
+2019-08-01 15:57:04,276 - {"action":"TRANSFOR","info":[{"applyId":"156204964899381508","list":[{"note":"测试测试测试","dictName":"数字证书申请单","fileUrl":"http://localhost:8081/file/20190702/40/84aab73ee6844ce988f3c1eddec8480c.png","isPass":true,"type":"_001","fileInfoId":"156204964906002722"},{"note":"好好啊好啊","dictName":"签章采集表","fileUrl":"http://localhost:8081/file/20190702/40/f5cdf0119575472790c549fbd0b0b82c.jpg","isPass":true,"type":"_015","fileInfoId":"156204964906047072"},{"note":"你好测测数据","dictName":"申请人有效身份证件原件","fileUrl":"http://localhost:8081/file/20190702/40/f30ded31d8a04f8f92c1180649f0c472.png","isPass":true,"type":"_002","fileInfoId":"156204964906068701"}]}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646224274}
+2019-08-01 15:57:12,826 - {"action":"TRANSFOR","info":[{"applyId":"156204964899381508","list":[{"note":"测试测试测试","dictName":"数字证书申请单","fileUrl":"http://localhost:8081/file/20190702/40/84aab73ee6844ce988f3c1eddec8480c.png","isPass":true,"type":"_001","fileInfoId":"156204964906002722"},{"note":"好好啊好啊","dictName":"签章采集表","fileUrl":"http://localhost:8081/file/20190702/40/f5cdf0119575472790c549fbd0b0b82c.jpg","isPass":true,"type":"_015","fileInfoId":"156204964906047072"},{"note":"你好测测数据","dictName":"申请人有效身份证件原件","fileUrl":"http://localhost:8081/file/20190702/40/f30ded31d8a04f8f92c1180649f0c472.png","isPass":true,"type":"_002","fileInfoId":"156204964906068701"}]}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646232826}
+2019-08-01 15:57:24,585 - {"action":"ExamApply","info":[{"applyId":"156204964899381508","list":[{"note":"测试测试测试","dictName":"数字证书申请单","fileUrl":"http://localhost:8081/file/20190702/40/84aab73ee6844ce988f3c1eddec8480c.png","isPass":true,"type":"_001","fileInfoId":"156204964906002722"},{"note":"好好啊好啊","dictName":"签章采集表","fileUrl":"http://localhost:8081/file/20190702/40/f5cdf0119575472790c549fbd0b0b82c.jpg","isPass":true,"type":"_015","fileInfoId":"156204964906047072"},{"note":"你好测测数据","dictName":"申请人有效身份证件原件","fileUrl":"http://localhost:8081/file/20190702/40/f30ded31d8a04f8f92c1180649f0c472.png","isPass":true,"type":"_002","fileInfoId":"156204964906068701"}]}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646244585}
+2019-08-01 15:57:28,294 - {"action":"ExamApply","info":[{"applyId":"156204964899381508","list":[{"note":"测试测试测试","dictName":"数字证书申请单","fileUrl":"http://localhost:8081/file/20190702/40/84aab73ee6844ce988f3c1eddec8480c.png","isPass":true,"type":"_001","fileInfoId":"156204964906002722"},{"note":"好好啊好啊","dictName":"签章采集表","fileUrl":"http://localhost:8081/file/20190702/40/f5cdf0119575472790c549fbd0b0b82c.jpg","isPass":true,"type":"_015","fileInfoId":"156204964906047072"},{"note":"你好测测数据","dictName":"申请人有效身份证件原件","fileUrl":"http://localhost:8081/file/20190702/40/f30ded31d8a04f8f92c1180649f0c472.png","isPass":true,"type":"_002","fileInfoId":"156204964906068701"}]}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646248293}
+2019-08-01 15:57:30,658 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646250658}
+2019-08-01 15:57:30,797 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 16:00:04,450 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646404450}
+2019-08-01 16:00:07,714 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646407714}
+2019-08-01 16:00:07,953 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 16:00:11,364 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646411364}
+2019-08-01 16:00:13,228 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564646413228}
+2019-08-01 16:00:13,360 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 16:16:07,783 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564647367782}
+2019-08-01 16:16:07,916 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 16:17:44,530 - {"action":"ToApplyProcess","info":["156204964899381508"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564647464529}
+2019-08-01 16:17:46,194 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564647466194}
+2019-08-01 16:17:46,297 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:01:16,818 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650076818}
+2019-08-01 17:01:17,173 - orderId={"156206461012647864":"233848160134","156206858113402733":"233846062154","156206949815255250":"未发货","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:01:32,381 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d8bd0de: startup date [Thu Aug 01 14:58:06 CST 2019]; root of context hierarchy
+2019-08-01 17:01:32,403 - Stopping beans in phase 2147483647
+2019-08-01 17:01:32,409 - Unregistering JMX-exposed beans on shutdown
+2019-08-01 17:01:32,410 - Unregistering JMX-exposed beans
+2019-08-01 17:01:33,562 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 17:01:33,569 - {dataSource-1} closed
+2019-08-01 17:01:37,575 - Starting CwcabackApplication on macbookpro with PID 4275 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-08-01 17:01:37,584 - The following profiles are active: dev
+2019-08-01 17:01:37,763 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 17:01:37 CST 2019]; root of context hierarchy
+2019-08-01 17:01:40,040 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 17:01:40,079 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-01 17:01:40,660 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b5517ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-01 17:01:41,411 - Tomcat initialized with port(s): 8081 (http)
+2019-08-01 17:01:41,424 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-08-01 17:01:41,434 - Starting service [Tomcat]
+2019-08-01 17:01:41,435 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-08-01 17:01:41,462 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-01 17:01:41,702 - Initializing Spring embedded WebApplicationContext
+2019-08-01 17:01:41,702 - Root WebApplicationContext: initialization completed in 3939 ms
+2019-08-01 17:01:41,848 - Servlet dispatcherServlet mapped to [/]
+2019-08-01 17:01:41,856 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-01 17:01:41,859 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-01 17:01:41,860 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-01 17:01:41,862 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-01 17:01:42,594 - {dataSource-1} inited
+2019-08-01 17:01:42,932 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-01 17:01:42,947 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-01 17:01:43,015 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-08-01 17:01:43,017 - HHH000206: hibernate.properties not found
+2019-08-01 17:01:43,059 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-01 17:01:43,264 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-01 17:01:43,921 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 17:01:45,162 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-01 17:01:45,233 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-08-01 17:01:45,234 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-08-01 17:01:45,234 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-08-01 17:01:45,237 - Mapped "{[/exam/print],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 17:01:45,238 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 17:01:45,238 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-08-01 17:01:45,238 - Mapped "{[/exam/applyProcess],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 17:01:45,239 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-08-01 17:01:45,239 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 17:01:45,239 - Mapped "{[/exam/oneexpress],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.oneexpress(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 17:01:45,239 - Mapped "{[/exam/updateapplyinfo],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.updateApplyinfo(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-08-01 17:01:45,240 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-08-01 17:01:45,241 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-01 17:01:45,241 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-08-01 17:01:45,242 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-08-01 17:01:45,243 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Integer)
+2019-08-01 17:01:45,243 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-08-01 17:01:45,243 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Integer)
+2019-08-01 17:01:45,243 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Integer,java.lang.Integer[])
+2019-08-01 17:01:45,244 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-08-01 17:01:45,245 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Integer)
+2019-08-01 17:01:45,246 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Integer)
+2019-08-01 17:01:45,246 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-08-01 17:01:45,246 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Integer,java.lang.Integer[])
+2019-08-01 17:01:45,247 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-08-01 17:01:45,247 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-08-01 17:01:45,248 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-08-01 17:01:45,251 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-01 17:01:45,252 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-01 17:01:45,252 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-01 17:01:45,256 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-01 17:01:45,257 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-01 17:01:45,607 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 17:01:45,667 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 17:01:37 CST 2019]; root of context hierarchy
+2019-08-01 17:01:45,724 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 17:01:45,724 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-01 17:01:45,742 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-08-01 17:01:46,835 - Registering beans for JMX exposure on startup
+2019-08-01 17:01:46,839 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-01 17:01:46,846 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-01 17:01:46,851 - Starting beans in phase 2147483647
+2019-08-01 17:01:46,851 - Context refreshed
+2019-08-01 17:01:46,867 - Found 1 custom documentation plugin(s)
+2019-08-01 17:01:46,878 - Scanning for api listing references
+2019-08-01 17:01:47,105 - Starting ProtocolHandler ["http-nio-8081"]
+2019-08-01 17:01:47,142 - Using a shared selector for servlet write/read
+2019-08-01 17:01:47,160 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-01 17:01:47,166 - Started CwcabackApplication in 10.608 seconds (JVM running for 11.879)
+2019-08-01 17:04:26,921 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-01 17:04:26,922 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-01 17:04:26,949 - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-08-01 17:04:27,207 - Starting without optional epoll library
+2019-08-01 17:04:27,208 - Starting without optional kqueue library
+2019-08-01 17:04:28,037 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650268026}
+2019-08-01 17:04:28,739 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:05:56,195 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650356195}
+2019-08-01 17:05:56,353 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:05:59,092 - {"action":"GetExamInfo","info":[{"isAsc":false,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650359092}
+2019-08-01 17:05:59,174 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:06:01,639 - {"action":"GetExamInfo","info":[{"isAsc":true,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650361639}
+2019-08-01 17:06:01,752 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:06:04,187 - {"action":"GetExamInfo","info":[{"isAsc":true,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650364187}
+2019-08-01 17:06:04,263 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:06:06,439 - {"action":"GetExamInfo","info":[{"isAsc":true,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650366439}
+2019-08-01 17:06:06,526 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:07:07,679 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650427679}
+2019-08-01 17:07:07,928 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:07:14,396 - {"action":"GetExamInfo","info":[{"isAsc":true,"orderName":"create_time"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650434396}
+2019-08-01 17:07:14,502 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:07:18,130 - {"action":"GetExamInfo","info":[{"isAsc":false,"orderName":"create_time"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564650438130}
+2019-08-01 17:07:18,199 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:17:34,909 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651054909}
+2019-08-01 17:21:36,008 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651296008}
+2019-08-01 17:21:54,611 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651314611}
+2019-08-01 17:21:54,713 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:21:57,998 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651317998}
+2019-08-01 17:22:46,718 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651366718}
+2019-08-01 17:23:28,932 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651408932}
+2019-08-01 17:23:47,891 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651427891}
+2019-08-01 17:26:27,354 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651587354}
+2019-08-01 17:26:27,456 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-01 17:26:55,560 - {"action":"ToApplyProcess","info":["156206949815255250"],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651615560}
+2019-08-01 17:27:20,666 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564651640666}
+2019-08-01 17:27:20,794 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:28:04,513 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564705684512}
+2019-08-02 08:28:04,689 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:40:53,398 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706453398}
+2019-08-02 08:40:53,520 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:41:04,350 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706464350}
+2019-08-02 08:41:04,522 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:41:36,222 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706496222}
+2019-08-02 08:41:36,353 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:41:49,097 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706509097}
+2019-08-02 08:41:49,234 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:41:55,995 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706515995}
+2019-08-02 08:41:56,137 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:42:12,035 - {"action":"GetExamInfo","info":[{}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564706532035}
+2019-08-02 08:42:12,248 - orderId={"156206949815255250":"未发货","156206858113402733":"233846062154","156206461012647864":"233848160134","156206771017815541":"未发货","156204964899381508":"未发货"}
+2019-08-02 08:45:24,379 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Thu Aug 01 17:01:37 CST 2019]; root of context hierarchy
+2019-08-02 08:45:24,393 - Stopping beans in phase 2147483647
+2019-08-02 08:45:24,396 - Unregistering JMX-exposed beans on shutdown
+2019-08-02 08:45:24,397 - Unregistering JMX-exposed beans
+2019-08-02 08:45:25,545 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-02 08:45:25,551 - {dataSource-1} closed

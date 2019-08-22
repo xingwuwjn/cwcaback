@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cwca.mapper.examination.DcUserMapper">
+    <resultMap id="BaseResultMap" type="com.cwca.bean.examination.DcUser">
+        <result column="user_id" property="userId" jdbcType="VARCHAR"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="xzq" property="xzq" jdbcType="VARCHAR"/>
+        <result column="zjbh" property="zjbh" jdbcType="VARCHAR"/>
+        <result column="frmc" property="frmc" jdbcType="VARCHAR"/>
+        <result column="dz" property="dz" jdbcType="VARCHAR"/>
+        <result column="phone1" property="phone1" jdbcType="VARCHAR"/>
+        <result column="phone2" property="phone2" jdbcType="VARCHAR"/>
+        <result column="valid" property="valid" jdbcType="VARCHAR"/>
+        <result column="is_new" property="isNew" jdbcType="VARCHAR"/>
+        <result column="td_zczj" property="tdZczj" jdbcType="VARCHAR"/>
+        <result column="tkq_zczj" property="tkqZczj" jdbcType="VARCHAR"/>
+        <result column="ckq_zczj" property="ckqZczj" jdbcType="VARCHAR"/>
+        <result column="issue_unit" property="issue_unit" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getDcUsers" resultMap="BaseResultMap" parameterType="java.util.List">
+        select *
+        from dc_users
+        where
+        user_id in
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="getDcUsersByApplyId" resultMap="BaseResultMap" parameterType="com.cwca.bean.examination.ApplyInfo">
+        select *
+        from dc_users
+        where
+        user_id =#{userId,jdbcType=INTEGER}
+    </select>
+
+</mapper>

@@ -1,0 +1,1362 @@
+2019-07-24 13:21:56,394 - Starting CwcabackApplication on macbookpro.local with PID 9076 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 13:21:56,399 - The following profiles are active: dev
+2019-07-24 13:21:56,674 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@568ff82: startup date [Wed Jul 24 13:21:56 CST 2019]; root of context hierarchy
+2019-07-24 13:21:58,392 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:21:58,479 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:21:58,505 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 13:21:58,507 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 13:21:58,507 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 13:21:59,057 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d63d485c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 13:21:59,732 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 13:21:59,750 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:21:59,761 - Starting service [Tomcat]
+2019-07-24 13:21:59,761 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 13:21:59,765 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 13:22:00,041 - Initializing Spring embedded WebApplicationContext
+2019-07-24 13:22:00,042 - Root WebApplicationContext: initialization completed in 3368 ms
+2019-07-24 13:22:00,120 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 13:22:00,124 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 13:22:00,124 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 13:22:00,124 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 13:22:00,124 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 13:22:00,506 - {dataSource-1} inited
+2019-07-24 13:22:00,769 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:22:00,785 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 13:22:00,887 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 13:22:00,888 - HHH000206: hibernate.properties not found
+2019-07-24 13:22:00,951 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 13:22:01,175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 13:22:01,731 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:22:03,442 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 13:22:03,526 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 13:22:03,527 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 13:22:03,528 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 13:22:03,531 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 13:22:03,532 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:22:03,533 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 13:22:03,534 - Mapped "{[/exam/applyInfoList],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 13:22:03,535 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 13:22:03,535 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:22:03,536 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 13:22:03,538 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:22:03,539 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:22:03,540 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:22:03,543 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 13:22:03,543 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 13:22:03,543 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 13:22:03,543 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 13:22:03,543 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 13:22:03,545 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 13:22:03,576 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 13:22:03,576 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 13:22:03,576 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 13:22:03,576 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 13:22:03,577 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 13:22:03,578 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 13:22:03,582 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 13:22:03,584 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 13:22:03,585 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 13:22:03,589 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:22:03,589 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:22:04,235 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:22:04,290 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@568ff82: startup date [Wed Jul 24 13:21:56 CST 2019]; root of context hierarchy
+2019-07-24 13:22:04,346 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:22:04,347 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:22:04,363 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 13:22:05,005 - Registering beans for JMX exposure on startup
+2019-07-24 13:22:05,007 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 13:22:05,014 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 13:22:05,019 - Starting beans in phase 2147483647
+2019-07-24 13:22:05,019 - Context refreshed
+2019-07-24 13:22:05,039 - Found 1 custom documentation plugin(s)
+2019-07-24 13:22:05,051 - Scanning for api listing references
+2019-07-24 13:22:05,266 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:22:05,308 - Using a shared selector for servlet write/read
+2019-07-24 13:22:05,340 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 13:22:05,351 - Started CwcabackApplication in 10.032 seconds (JVM running for 11.576)
+2019-07-24 13:30:13,709 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 13:30:13,710 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 13:30:13,734 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-07-24 13:30:13,770 - Required request body is missing: public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 13:32:09,207 - Request method 'POST' not supported
+2019-07-24 13:32:18,554 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@568ff82: startup date [Wed Jul 24 13:21:56 CST 2019]; root of context hierarchy
+2019-07-24 13:32:18,559 - Stopping beans in phase 2147483647
+2019-07-24 13:32:18,563 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 13:32:18,564 - Unregistering JMX-exposed beans
+2019-07-24 13:32:18,582 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:32:18,587 - {dataSource-1} closed
+2019-07-24 13:32:24,486 - Starting CwcabackApplication on macbookpro.local with PID 9095 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 13:32:24,489 - The following profiles are active: dev
+2019-07-24 13:32:24,574 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50caa560: startup date [Wed Jul 24 13:32:24 CST 2019]; root of context hierarchy
+2019-07-24 13:32:25,685 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:32:25,781 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:32:25,808 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 13:32:25,812 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 13:32:25,813 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 13:32:26,272 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e92ee562] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 13:32:26,833 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 13:32:26,844 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:32:26,957 - Starting service [Tomcat]
+2019-07-24 13:32:26,958 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 13:32:26,961 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 13:32:27,049 - Initializing Spring embedded WebApplicationContext
+2019-07-24 13:32:27,050 - Root WebApplicationContext: initialization completed in 2476 ms
+2019-07-24 13:32:27,146 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 13:32:27,150 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 13:32:27,150 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 13:32:27,151 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 13:32:27,151 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 13:32:27,456 - {dataSource-1} inited
+2019-07-24 13:32:27,672 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:32:27,691 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 13:32:27,773 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 13:32:27,774 - HHH000206: hibernate.properties not found
+2019-07-24 13:32:27,808 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 13:32:27,931 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 13:32:28,376 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:32:29,974 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 13:32:30,066 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 13:32:30,067 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 13:32:30,068 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 13:32:30,070 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 13:32:30,071 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:32:30,072 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 13:32:30,073 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 13:32:30,073 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 13:32:30,073 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:32:30,074 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 13:32:30,075 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:32:30,076 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:32:30,078 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:32:30,081 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 13:32:30,081 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 13:32:30,082 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 13:32:30,082 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 13:32:30,082 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 13:32:30,084 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 13:32:30,084 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 13:32:30,084 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 13:32:30,085 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 13:32:30,086 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 13:32:30,087 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 13:32:30,089 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 13:32:30,093 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 13:32:30,095 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 13:32:30,099 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 13:32:30,103 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:32:30,103 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:32:30,708 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:32:30,762 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50caa560: startup date [Wed Jul 24 13:32:24 CST 2019]; root of context hierarchy
+2019-07-24 13:32:30,816 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:32:30,816 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:32:30,834 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 13:32:31,404 - Registering beans for JMX exposure on startup
+2019-07-24 13:32:31,406 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 13:32:31,415 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 13:32:31,421 - Starting beans in phase 2147483647
+2019-07-24 13:32:31,421 - Context refreshed
+2019-07-24 13:32:31,438 - Found 1 custom documentation plugin(s)
+2019-07-24 13:32:31,453 - Scanning for api listing references
+2019-07-24 13:32:31,658 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:32:31,706 - Using a shared selector for servlet write/read
+2019-07-24 13:32:31,729 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 13:32:31,743 - Started CwcabackApplication in 8.016 seconds (JVM running for 9.206)
+2019-07-24 13:32:43,087 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 13:32:43,087 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 13:32:43,107 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-07-24 13:32:43,265 - Starting without optional epoll library
+2019-07-24 13:32:43,267 - Starting without optional kqueue library
+2019-07-24 13:32:43,429 - 【请求错误】Cookie中查不到token
+2019-07-24 13:33:59,242 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563946439233}
+2019-07-24 13:33:59,302 - nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'create_time' in 'class com.cwca.bean.examination.ApplyInfo'
+2019-07-24 13:34:47,784 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50caa560: startup date [Wed Jul 24 13:32:24 CST 2019]; root of context hierarchy
+2019-07-24 13:34:47,787 - Stopping beans in phase 2147483647
+2019-07-24 13:34:47,788 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 13:34:47,789 - Unregistering JMX-exposed beans
+2019-07-24 13:34:48,915 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:34:48,919 - {dataSource-1} closed
+2019-07-24 13:34:54,946 - Starting CwcabackApplication on macbookpro.local with PID 9099 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 13:34:54,949 - The following profiles are active: dev
+2019-07-24 13:34:55,034 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ff811: startup date [Wed Jul 24 13:34:55 CST 2019]; root of context hierarchy
+2019-07-24 13:34:56,030 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:34:56,092 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:34:56,110 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 13:34:56,111 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 13:34:56,112 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 13:34:56,588 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dfe19409] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 13:34:57,107 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 13:34:57,119 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:34:57,227 - Starting service [Tomcat]
+2019-07-24 13:34:57,227 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 13:34:57,231 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 13:34:57,322 - Initializing Spring embedded WebApplicationContext
+2019-07-24 13:34:57,322 - Root WebApplicationContext: initialization completed in 2288 ms
+2019-07-24 13:34:57,414 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 13:34:57,418 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 13:34:57,418 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 13:34:57,418 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 13:34:57,418 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 13:34:57,714 - {dataSource-1} inited
+2019-07-24 13:34:57,927 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:34:57,944 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 13:34:58,009 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 13:34:58,011 - HHH000206: hibernate.properties not found
+2019-07-24 13:34:58,050 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 13:34:58,186 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 13:34:58,644 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:35:00,123 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 13:35:00,187 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 13:35:00,188 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 13:35:00,188 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 13:35:00,191 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 13:35:00,191 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:35:00,191 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 13:35:00,191 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 13:35:00,192 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 13:35:00,192 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:35:00,192 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 13:35:00,193 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:35:00,193 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:35:00,194 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:35:00,195 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 13:35:00,195 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 13:35:00,195 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 13:35:00,195 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 13:35:00,196 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 13:35:00,197 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 13:35:00,198 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 13:35:00,198 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 13:35:00,198 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 13:35:00,198 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 13:35:00,199 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 13:35:00,200 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 13:35:00,203 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 13:35:00,204 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 13:35:00,205 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 13:35:00,208 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:35:00,209 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:35:00,860 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:35:00,910 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ff811: startup date [Wed Jul 24 13:34:55 CST 2019]; root of context hierarchy
+2019-07-24 13:35:00,963 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:35:00,963 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:35:00,981 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 13:35:01,534 - Registering beans for JMX exposure on startup
+2019-07-24 13:35:01,537 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 13:35:01,544 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 13:35:01,548 - Starting beans in phase 2147483647
+2019-07-24 13:35:01,548 - Context refreshed
+2019-07-24 13:35:01,561 - Found 1 custom documentation plugin(s)
+2019-07-24 13:35:01,571 - Scanning for api listing references
+2019-07-24 13:35:01,727 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:35:01,756 - Using a shared selector for servlet write/read
+2019-07-24 13:35:01,776 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 13:35:01,782 - Started CwcabackApplication in 7.575 seconds (JVM running for 8.886)
+2019-07-24 13:35:08,308 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 13:35:08,309 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 13:35:08,333 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-07-24 13:35:08,563 - Starting without optional epoll library
+2019-07-24 13:35:08,564 - Starting without optional kqueue library
+2019-07-24 13:35:08,697 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563946508687}
+2019-07-24 13:35:08,729 - nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'end_time' in 'class com.cwca.bean.examination.ApplyInfo'
+2019-07-24 13:36:11,867 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ff811: startup date [Wed Jul 24 13:34:55 CST 2019]; root of context hierarchy
+2019-07-24 13:36:11,870 - Stopping beans in phase 2147483647
+2019-07-24 13:36:11,871 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 13:36:11,872 - Unregistering JMX-exposed beans
+2019-07-24 13:36:12,999 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:36:13,003 - {dataSource-1} closed
+2019-07-24 13:36:18,175 - Starting CwcabackApplication on macbookpro.local with PID 9103 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 13:36:18,182 - The following profiles are active: dev
+2019-07-24 13:36:18,342 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Wed Jul 24 13:36:18 CST 2019]; root of context hierarchy
+2019-07-24 13:36:19,732 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:36:19,806 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:36:19,827 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 13:36:19,829 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 13:36:19,830 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 13:36:20,285 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d42e7f57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 13:36:20,796 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 13:36:20,807 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:36:20,816 - Starting service [Tomcat]
+2019-07-24 13:36:20,816 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 13:36:20,838 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 13:36:21,031 - Initializing Spring embedded WebApplicationContext
+2019-07-24 13:36:21,032 - Root WebApplicationContext: initialization completed in 2690 ms
+2019-07-24 13:36:21,120 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 13:36:21,124 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 13:36:21,124 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 13:36:21,124 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 13:36:21,124 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 13:36:21,404 - {dataSource-1} inited
+2019-07-24 13:36:21,611 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:36:21,626 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 13:36:21,697 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 13:36:21,698 - HHH000206: hibernate.properties not found
+2019-07-24 13:36:21,735 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 13:36:21,894 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 13:36:22,330 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:36:23,890 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 13:36:23,965 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 13:36:23,969 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 13:36:23,969 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 13:36:23,973 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 13:36:23,974 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:36:23,975 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 13:36:23,975 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 13:36:23,978 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 13:36:23,978 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:36:23,979 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 13:36:23,981 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:36:23,983 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:36:23,986 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:36:23,987 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 13:36:23,988 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 13:36:23,988 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 13:36:23,988 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 13:36:23,988 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 13:36:23,993 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 13:36:23,993 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 13:36:23,993 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 13:36:23,994 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 13:36:23,994 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 13:36:23,994 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 13:36:23,996 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 13:36:24,002 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 13:36:24,004 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 13:36:24,005 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 13:36:24,010 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:36:24,011 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:36:24,681 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:36:24,730 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Wed Jul 24 13:36:18 CST 2019]; root of context hierarchy
+2019-07-24 13:36:24,783 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:36:24,784 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:36:24,802 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 13:36:25,348 - Registering beans for JMX exposure on startup
+2019-07-24 13:36:25,350 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 13:36:25,357 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 13:36:25,361 - Starting beans in phase 2147483647
+2019-07-24 13:36:25,362 - Context refreshed
+2019-07-24 13:36:25,375 - Found 1 custom documentation plugin(s)
+2019-07-24 13:36:25,385 - Scanning for api listing references
+2019-07-24 13:36:25,538 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:36:25,562 - Using a shared selector for servlet write/read
+2019-07-24 13:36:25,579 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 13:36:25,585 - Started CwcabackApplication in 8.091 seconds (JVM running for 9.135)
+2019-07-24 13:36:55,775 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 13:36:55,775 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 13:36:55,822 - FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2019-07-24 13:36:56,039 - Starting without optional epoll library
+2019-07-24 13:36:56,040 - Starting without optional kqueue library
+2019-07-24 13:36:56,332 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563946616320}
+2019-07-24 13:36:56,428 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-24 13:36:56,461 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'template.dc_applyinfo' doesn't exist
+### The error may exist in com/cwca/mapper/examination/ApplyInfoMapper.xml
+### The error may involve com.cwca.mapper.examination.ApplyInfoMapper.findAllApplyInfo-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM dc_applyinfo
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'template.dc_applyinfo' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'template.dc_applyinfo' doesn't exist
+2019-07-24 13:55:09,035 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ab9e72c: startup date [Wed Jul 24 13:36:18 CST 2019]; root of context hierarchy
+2019-07-24 13:55:09,040 - Stopping beans in phase 2147483647
+2019-07-24 13:55:09,042 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 13:55:09,043 - Unregistering JMX-exposed beans
+2019-07-24 13:55:10,176 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:55:10,183 - {dataSource-1} closed
+2019-07-24 13:55:13,593 - Starting CwcabackApplication on macbookpro.local with PID 9139 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 13:55:13,595 - The following profiles are active: dev
+2019-07-24 13:55:13,705 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50caa560: startup date [Wed Jul 24 13:55:13 CST 2019]; root of context hierarchy
+2019-07-24 13:55:14,803 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:55:14,862 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:55:14,879 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 13:55:14,881 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 13:55:14,881 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 13:55:15,348 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e92ee562] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 13:55:15,935 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 13:55:15,948 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:55:15,958 - Starting service [Tomcat]
+2019-07-24 13:55:15,958 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 13:55:15,962 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 13:55:16,172 - Initializing Spring embedded WebApplicationContext
+2019-07-24 13:55:16,172 - Root WebApplicationContext: initialization completed in 2468 ms
+2019-07-24 13:55:16,273 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 13:55:16,276 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 13:55:16,277 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 13:55:16,277 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 13:55:16,277 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 13:55:16,585 - {dataSource-1} inited
+2019-07-24 13:55:16,809 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:55:16,831 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 13:55:16,896 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 13:55:16,909 - HHH000206: hibernate.properties not found
+2019-07-24 13:55:16,946 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 13:55:17,060 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 13:55:17,525 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:55:19,067 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 13:55:19,130 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 13:55:19,132 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 13:55:19,133 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 13:55:19,135 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 13:55:19,135 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:55:19,136 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 13:55:19,136 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 13:55:19,136 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 13:55:19,136 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:55:19,137 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 13:55:19,137 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:55:19,138 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:55:19,138 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:55:19,139 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 13:55:19,139 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 13:55:19,140 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 13:55:19,140 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 13:55:19,140 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 13:55:19,141 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 13:55:19,141 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 13:55:19,142 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 13:55:19,142 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 13:55:19,142 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 13:55:19,142 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 13:55:19,144 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 13:55:19,151 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 13:55:19,152 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 13:55:19,153 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 13:55:19,158 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:55:19,158 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:55:19,782 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:55:19,830 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50caa560: startup date [Wed Jul 24 13:55:13 CST 2019]; root of context hierarchy
+2019-07-24 13:55:19,882 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:55:19,882 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:55:19,899 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 13:55:20,466 - Registering beans for JMX exposure on startup
+2019-07-24 13:55:20,469 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 13:55:20,477 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 13:55:20,481 - Starting beans in phase 2147483647
+2019-07-24 13:55:20,481 - Context refreshed
+2019-07-24 13:55:20,494 - Found 1 custom documentation plugin(s)
+2019-07-24 13:55:20,505 - Scanning for api listing references
+2019-07-24 13:55:20,692 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:55:20,723 - Using a shared selector for servlet write/read
+2019-07-24 13:55:20,741 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 13:55:20,751 - Started CwcabackApplication in 7.899 seconds (JVM running for 9.104)
+2019-07-24 13:55:50,504 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 13:55:50,505 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 13:55:50,526 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2019-07-24 13:55:50,653 - Starting without optional epoll library
+2019-07-24 13:55:50,654 - Starting without optional kqueue library
+2019-07-24 13:55:50,829 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563947750815}
+2019-07-24 13:55:50,929 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-24 13:55:50,959 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'template.dc_applyinfo' doesn't exist
+### The error may exist in com/cwca/mapper/examination/ApplyInfoMapper.xml
+### The error may involve com.cwca.mapper.examination.ApplyInfoMapper.findAllApplyInfo-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM dc_applyinfo
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'template.dc_applyinfo' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'template.dc_applyinfo' doesn't exist
+2019-07-24 13:57:11,879 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50caa560: startup date [Wed Jul 24 13:55:13 CST 2019]; root of context hierarchy
+2019-07-24 13:57:11,882 - Stopping beans in phase 2147483647
+2019-07-24 13:57:11,884 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 13:57:11,885 - Unregistering JMX-exposed beans
+2019-07-24 13:57:13,011 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:57:13,015 - {dataSource-1} closed
+2019-07-24 13:57:16,671 - Starting CwcabackApplication on macbookpro.local with PID 9142 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 13:57:16,674 - The following profiles are active: dev
+2019-07-24 13:57:16,821 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ff811: startup date [Wed Jul 24 13:57:16 CST 2019]; root of context hierarchy
+2019-07-24 13:57:18,024 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:57:18,139 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 13:57:18,171 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 13:57:18,173 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 13:57:18,173 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 13:57:18,598 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab58b640] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 13:57:19,134 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 13:57:19,146 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:57:19,155 - Starting service [Tomcat]
+2019-07-24 13:57:19,156 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 13:57:19,160 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 13:57:19,253 - Initializing Spring embedded WebApplicationContext
+2019-07-24 13:57:19,253 - Root WebApplicationContext: initialization completed in 2433 ms
+2019-07-24 13:57:19,455 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 13:57:19,459 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 13:57:19,459 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 13:57:19,459 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 13:57:19,460 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 13:57:19,740 - {dataSource-1} inited
+2019-07-24 13:57:19,942 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:57:19,954 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 13:57:20,016 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 13:57:20,017 - HHH000206: hibernate.properties not found
+2019-07-24 13:57:20,049 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 13:57:20,149 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 13:57:20,647 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 13:57:22,242 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 13:57:22,313 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 13:57:22,314 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 13:57:22,315 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 13:57:22,318 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 13:57:22,318 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:57:22,318 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 13:57:22,318 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 13:57:22,318 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 13:57:22,319 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 13:57:22,319 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 13:57:22,320 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:57:22,320 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:57:22,321 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:57:22,322 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 13:57:22,322 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 13:57:22,322 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 13:57:22,323 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 13:57:22,323 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 13:57:22,324 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 13:57:22,325 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 13:57:22,325 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 13:57:22,325 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 13:57:22,325 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 13:57:22,326 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 13:57:22,327 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 13:57:22,332 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 13:57:22,333 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 13:57:22,334 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 13:57:22,338 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 13:57:22,338 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 13:57:22,770 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:57:23,049 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ff811: startup date [Wed Jul 24 13:57:16 CST 2019]; root of context hierarchy
+2019-07-24 13:57:23,106 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:57:23,106 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 13:57:23,126 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 13:57:23,711 - Registering beans for JMX exposure on startup
+2019-07-24 13:57:23,713 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 13:57:23,723 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 13:57:23,728 - Starting beans in phase 2147483647
+2019-07-24 13:57:23,730 - Context refreshed
+2019-07-24 13:57:23,745 - Found 1 custom documentation plugin(s)
+2019-07-24 13:57:23,756 - Scanning for api listing references
+2019-07-24 13:57:23,905 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 13:57:23,929 - Using a shared selector for servlet write/read
+2019-07-24 13:57:23,946 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 13:57:23,951 - Started CwcabackApplication in 8.139 seconds (JVM running for 9.531)
+2019-07-24 13:57:38,019 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 13:57:38,020 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 13:57:38,042 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2019-07-24 13:57:38,168 - Starting without optional epoll library
+2019-07-24 13:57:38,169 - Starting without optional kqueue library
+2019-07-24 13:57:38,310 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563947858297}
+2019-07-24 13:57:38,411 - nested exception is org.apache.ibatis.binding.BindingException: Parameter 'applyids' not found. Available parameters are [collection, list]
+2019-07-24 14:00:51,092 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2ff811: startup date [Wed Jul 24 13:57:16 CST 2019]; root of context hierarchy
+2019-07-24 14:00:51,096 - Stopping beans in phase 2147483647
+2019-07-24 14:00:51,097 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 14:00:51,098 - Unregistering JMX-exposed beans
+2019-07-24 14:00:52,231 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:00:52,241 - {dataSource-1} closed
+2019-07-24 14:00:58,519 - Starting CwcabackApplication on macbookpro.local with PID 9147 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 14:00:58,525 - The following profiles are active: dev
+2019-07-24 14:00:58,654 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fe7c640: startup date [Wed Jul 24 14:00:58 CST 2019]; root of context hierarchy
+2019-07-24 14:01:00,100 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:01:00,188 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:01:00,218 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 14:01:00,220 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 14:01:00,221 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 14:01:00,808 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$890f06eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 14:01:01,599 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 14:01:01,615 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:01:01,627 - Starting service [Tomcat]
+2019-07-24 14:01:01,628 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 14:01:01,634 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 14:01:01,769 - Initializing Spring embedded WebApplicationContext
+2019-07-24 14:01:01,769 - Root WebApplicationContext: initialization completed in 3116 ms
+2019-07-24 14:01:01,894 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 14:01:01,904 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 14:01:01,905 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 14:01:01,907 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 14:01:01,909 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 14:01:02,277 - {dataSource-1} inited
+2019-07-24 14:01:02,538 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:01:02,552 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 14:01:02,637 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 14:01:02,639 - HHH000206: hibernate.properties not found
+2019-07-24 14:01:02,695 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 14:01:02,937 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 14:01:03,552 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:01:05,793 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 14:01:05,872 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 14:01:05,874 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 14:01:05,874 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 14:01:05,877 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 14:01:05,877 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:01:05,877 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 14:01:05,877 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 14:01:05,878 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 14:01:05,878 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:01:05,878 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 14:01:05,879 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:01:05,879 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:01:05,880 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:01:05,881 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 14:01:05,881 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 14:01:05,882 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 14:01:05,882 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 14:01:05,882 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 14:01:05,883 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 14:01:05,883 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 14:01:05,884 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 14:01:05,884 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 14:01:05,884 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 14:01:05,884 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 14:01:05,886 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 14:01:05,889 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 14:01:05,890 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 14:01:05,890 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 14:01:05,894 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:01:05,895 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:01:06,287 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:01:06,352 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fe7c640: startup date [Wed Jul 24 14:00:58 CST 2019]; root of context hierarchy
+2019-07-24 14:01:06,423 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:01:06,423 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:01:06,446 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 14:01:07,183 - Registering beans for JMX exposure on startup
+2019-07-24 14:01:07,185 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 14:01:07,198 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 14:01:07,203 - Starting beans in phase 2147483647
+2019-07-24 14:01:07,204 - Context refreshed
+2019-07-24 14:01:07,222 - Found 1 custom documentation plugin(s)
+2019-07-24 14:01:07,242 - Scanning for api listing references
+2019-07-24 14:01:07,457 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:01:07,489 - Using a shared selector for servlet write/read
+2019-07-24 14:01:07,511 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 14:01:07,516 - Started CwcabackApplication in 9.957 seconds (JVM running for 11.95)
+2019-07-24 14:01:13,563 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 14:01:13,564 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 14:01:13,586 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2019-07-24 14:01:13,794 - Starting without optional epoll library
+2019-07-24 14:01:13,801 - Starting without optional kqueue library
+2019-07-24 14:01:13,998 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563948073983}
+2019-07-24 14:03:24,507 - nested exception is org.apache.ibatis.binding.BindingException: Parameter 'applyids' not found. Available parameters are [collection, list]
+2019-07-24 14:08:04,306 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fe7c640: startup date [Wed Jul 24 14:00:58 CST 2019]; root of context hierarchy
+2019-07-24 14:08:04,320 - Stopping beans in phase 2147483647
+2019-07-24 14:08:04,324 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 14:08:04,326 - Unregistering JMX-exposed beans
+2019-07-24 14:08:05,472 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:08:05,479 - {dataSource-1} closed
+2019-07-24 14:08:09,515 - Starting CwcabackApplication on macbookpro.local with PID 9173 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 14:08:09,517 - The following profiles are active: dev
+2019-07-24 14:08:09,580 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7096b474: startup date [Wed Jul 24 14:08:09 CST 2019]; root of context hierarchy
+2019-07-24 14:08:10,710 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:08:10,820 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:08:10,862 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 14:08:10,864 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 14:08:10,864 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 14:08:11,434 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d67c3213] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 14:08:12,305 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 14:08:12,321 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:08:12,334 - Starting service [Tomcat]
+2019-07-24 14:08:12,334 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 14:08:12,340 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 14:08:12,443 - Initializing Spring embedded WebApplicationContext
+2019-07-24 14:08:12,444 - Root WebApplicationContext: initialization completed in 2864 ms
+2019-07-24 14:08:12,545 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 14:08:12,550 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 14:08:12,551 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 14:08:12,551 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 14:08:12,551 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 14:08:12,922 - {dataSource-1} inited
+2019-07-24 14:08:13,187 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:08:13,202 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 14:08:13,285 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 14:08:13,288 - HHH000206: hibernate.properties not found
+2019-07-24 14:08:13,340 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 14:08:13,595 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 14:08:14,207 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:08:16,319 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 14:08:16,400 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 14:08:16,401 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 14:08:16,402 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 14:08:16,404 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 14:08:16,405 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:08:16,405 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 14:08:16,405 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 14:08:16,405 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 14:08:16,405 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:08:16,406 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 14:08:16,407 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:08:16,407 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:08:16,408 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:08:16,409 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 14:08:16,409 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 14:08:16,409 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 14:08:16,409 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 14:08:16,409 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 14:08:16,411 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 14:08:16,411 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 14:08:16,411 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 14:08:16,411 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 14:08:16,412 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 14:08:16,412 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 14:08:16,414 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 14:08:16,417 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 14:08:16,417 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 14:08:16,418 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 14:08:16,423 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:08:16,423 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:08:16,819 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:08:16,884 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7096b474: startup date [Wed Jul 24 14:08:09 CST 2019]; root of context hierarchy
+2019-07-24 14:08:16,953 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:08:16,953 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:08:16,978 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 14:08:17,767 - Registering beans for JMX exposure on startup
+2019-07-24 14:08:17,770 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 14:08:17,778 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 14:08:17,783 - Starting beans in phase 2147483647
+2019-07-24 14:08:17,784 - Context refreshed
+2019-07-24 14:08:17,801 - Found 1 custom documentation plugin(s)
+2019-07-24 14:08:17,815 - Scanning for api listing references
+2019-07-24 14:08:18,028 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:08:18,066 - Using a shared selector for servlet write/read
+2019-07-24 14:08:18,090 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 14:08:18,095 - Started CwcabackApplication in 9.374 seconds (JVM running for 10.99)
+2019-07-24 14:08:24,197 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 14:08:24,198 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 14:08:24,225 - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-07-24 14:08:24,388 - Starting without optional epoll library
+2019-07-24 14:08:24,390 - Starting without optional kqueue library
+2019-07-24 14:08:24,582 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563948504569}
+2019-07-24 14:09:06,391 - nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'shr_remark' of 'class com.cwca.bean.examination.Express' with value '测试' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'shr_remark' in 'class com.cwca.bean.examination.Express'
+2019-07-24 14:10:35,687 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7096b474: startup date [Wed Jul 24 14:08:09 CST 2019]; root of context hierarchy
+2019-07-24 14:10:35,691 - Stopping beans in phase 2147483647
+2019-07-24 14:10:35,693 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 14:10:35,696 - Unregistering JMX-exposed beans
+2019-07-24 14:10:36,828 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:10:36,833 - {dataSource-1} closed
+2019-07-24 14:10:40,824 - Starting CwcabackApplication on macbookpro.local with PID 9176 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 14:10:40,828 - The following profiles are active: dev
+2019-07-24 14:10:40,974 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60a2630a: startup date [Wed Jul 24 14:10:40 CST 2019]; root of context hierarchy
+2019-07-24 14:10:42,177 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:10:42,291 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:10:42,323 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 14:10:42,327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 14:10:42,328 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 14:10:42,918 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$34783fa2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 14:10:43,783 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 14:10:43,798 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:10:43,810 - Starting service [Tomcat]
+2019-07-24 14:10:43,810 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 14:10:43,816 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 14:10:43,922 - Initializing Spring embedded WebApplicationContext
+2019-07-24 14:10:43,922 - Root WebApplicationContext: initialization completed in 2948 ms
+2019-07-24 14:10:44,031 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 14:10:44,042 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 14:10:44,043 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 14:10:44,043 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 14:10:44,043 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 14:10:44,429 - {dataSource-1} inited
+2019-07-24 14:10:44,713 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:10:44,728 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 14:10:44,813 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 14:10:44,815 - HHH000206: hibernate.properties not found
+2019-07-24 14:10:44,891 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 14:10:45,091 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 14:10:45,732 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:10:48,210 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 14:10:48,311 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 14:10:48,312 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 14:10:48,312 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 14:10:48,317 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 14:10:48,317 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:10:48,318 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 14:10:48,318 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 14:10:48,318 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 14:10:48,318 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:10:48,319 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 14:10:48,320 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:10:48,320 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:10:48,320 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:10:48,322 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 14:10:48,322 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 14:10:48,322 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 14:10:48,322 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 14:10:48,323 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 14:10:48,324 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 14:10:48,325 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 14:10:48,325 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 14:10:48,325 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 14:10:48,325 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 14:10:48,325 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 14:10:48,327 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 14:10:48,330 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 14:10:48,331 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 14:10:48,332 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 14:10:48,336 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:10:48,337 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:10:48,769 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:10:48,839 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60a2630a: startup date [Wed Jul 24 14:10:40 CST 2019]; root of context hierarchy
+2019-07-24 14:10:48,922 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:10:48,922 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:10:48,950 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 14:10:49,798 - Registering beans for JMX exposure on startup
+2019-07-24 14:10:49,801 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 14:10:49,814 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 14:10:49,820 - Starting beans in phase 2147483647
+2019-07-24 14:10:49,820 - Context refreshed
+2019-07-24 14:10:49,842 - Found 1 custom documentation plugin(s)
+2019-07-24 14:10:49,859 - Scanning for api listing references
+2019-07-24 14:10:50,139 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:10:50,166 - Using a shared selector for servlet write/read
+2019-07-24 14:10:50,201 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 14:10:50,207 - Started CwcabackApplication in 10.221 seconds (JVM running for 11.866)
+2019-07-24 14:11:07,340 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 14:11:07,341 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 14:11:07,370 - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-07-24 14:11:07,534 - Starting without optional epoll library
+2019-07-24 14:11:07,536 - Starting without optional kqueue library
+2019-07-24 14:11:07,726 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563948667714}
+2019-07-24 14:12:33,059 - 【token过期/未登录】Redis中查不到token
+2019-07-24 14:12:34,896 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-24 14:12:34,949 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.role' doesn't exist
+### The error may exist in com/cwca/mapper/UserMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT r.* FROM dc_admin_user_role h,role r where h.rid=r.id AND h.hrid=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.role' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.role' doesn't exist
+2019-07-24 14:13:28,225 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60a2630a: startup date [Wed Jul 24 14:10:40 CST 2019]; root of context hierarchy
+2019-07-24 14:13:28,227 - Stopping beans in phase 2147483647
+2019-07-24 14:13:28,229 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 14:13:28,232 - Unregistering JMX-exposed beans
+2019-07-24 14:13:29,367 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:13:29,373 - {dataSource-1} closed
+2019-07-24 14:13:33,426 - Starting CwcabackApplication on macbookpro.local with PID 9180 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 14:13:33,434 - The following profiles are active: dev
+2019-07-24 14:13:33,576 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53812a9b: startup date [Wed Jul 24 14:13:33 CST 2019]; root of context hierarchy
+2019-07-24 14:13:35,003 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:13:35,089 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:13:35,113 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 14:13:35,115 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 14:13:35,115 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 14:13:35,696 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de1fb3e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 14:13:36,526 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 14:13:36,543 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:13:36,557 - Starting service [Tomcat]
+2019-07-24 14:13:36,558 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 14:13:36,564 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 14:13:36,663 - Initializing Spring embedded WebApplicationContext
+2019-07-24 14:13:36,664 - Root WebApplicationContext: initialization completed in 3087 ms
+2019-07-24 14:13:36,755 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 14:13:36,764 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 14:13:36,766 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 14:13:36,766 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 14:13:36,766 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 14:13:37,150 - {dataSource-1} inited
+2019-07-24 14:13:37,410 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:13:37,424 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 14:13:37,516 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 14:13:37,518 - HHH000206: hibernate.properties not found
+2019-07-24 14:13:37,578 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 14:13:37,796 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 14:13:38,395 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:13:40,597 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 14:13:40,678 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 14:13:40,679 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 14:13:40,680 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 14:13:40,682 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 14:13:40,682 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:13:40,683 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 14:13:40,683 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 14:13:40,683 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 14:13:40,683 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:13:40,684 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 14:13:40,685 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:13:40,685 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:13:40,686 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:13:40,687 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 14:13:40,687 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 14:13:40,687 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 14:13:40,687 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 14:13:40,688 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 14:13:40,689 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 14:13:40,689 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 14:13:40,690 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 14:13:40,690 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 14:13:40,690 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 14:13:40,690 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 14:13:40,692 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 14:13:40,695 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 14:13:40,696 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 14:13:40,697 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 14:13:40,701 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:13:40,701 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:13:41,095 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:13:41,167 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53812a9b: startup date [Wed Jul 24 14:13:33 CST 2019]; root of context hierarchy
+2019-07-24 14:13:41,238 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:13:41,238 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:13:41,260 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 14:13:42,050 - Registering beans for JMX exposure on startup
+2019-07-24 14:13:42,053 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 14:13:42,061 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 14:13:42,066 - Starting beans in phase 2147483647
+2019-07-24 14:13:42,067 - Context refreshed
+2019-07-24 14:13:42,085 - Found 1 custom documentation plugin(s)
+2019-07-24 14:13:42,103 - Scanning for api listing references
+2019-07-24 14:13:42,313 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:13:42,343 - Using a shared selector for servlet write/read
+2019-07-24 14:13:42,369 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 14:13:42,375 - Started CwcabackApplication in 9.975 seconds (JVM running for 11.569)
+2019-07-24 14:13:54,073 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 14:13:54,076 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 14:13:54,104 - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2019-07-24 14:13:54,400 - Starting without optional epoll library
+2019-07-24 14:13:54,403 - Starting without optional kqueue library
+2019-07-24 14:20:19,627 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-24 14:20:19,706 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.article' doesn't exist
+### The error may exist in com/cwca/mapper/article/ArticleMapper.xml
+### The error may involve com.cwca.mapper.article.ArticleMapper.getAllArticle-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM article
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.article' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.article' doesn't exist
+2019-07-24 14:49:10,121 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.menu_role' doesn't exist
+### The error may exist in com/cwca/mapper/MenuMapper.xml
+### The error may involve com.cwca.mapper.MenuMapper.getMenusByHrId-Inline
+### The error occurred while setting parameters
+### SQL: select m1.id,m1.redirect,m1.path,m1.component,m1.name,m1.hidden,m1.title,m1.icon,m1.nocache,         m2.component as component2,m2.icon as icon2,m2.nocache as nocache2,m2.name         as name2,m2.path as path2,m2.hidden as hidden2,m2.title as title2         from dc_admin_menu m1,dc_admin_menu m2 where m1.id=m2.parentId and m1.id!=1 and m2.id         in(select mr.mid from dc_admin_user_role u_r,menu_role mr where u_r.rid=mr.rid and u_r.hrid=?)         order by m1.id,m2.id
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.menu_role' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.menu_role' doesn't exist
+2019-07-24 14:50:20,723 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53812a9b: startup date [Wed Jul 24 14:13:33 CST 2019]; root of context hierarchy
+2019-07-24 14:50:20,749 - Stopping beans in phase 2147483647
+2019-07-24 14:50:20,758 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 14:50:20,766 - Unregistering JMX-exposed beans
+2019-07-24 14:50:21,934 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:50:21,949 - {dataSource-1} closed
+2019-07-24 14:50:26,342 - Starting CwcabackApplication on macbookpro.local with PID 9329 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 14:50:26,352 - The following profiles are active: dev
+2019-07-24 14:50:26,473 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aecbb8d: startup date [Wed Jul 24 14:50:26 CST 2019]; root of context hierarchy
+2019-07-24 14:50:28,047 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:50:28,133 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 14:50:28,154 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 14:50:28,156 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 14:50:28,157 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 14:50:28,790 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8eea2650] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 14:50:29,673 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 14:50:29,689 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:50:29,701 - Starting service [Tomcat]
+2019-07-24 14:50:29,702 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 14:50:29,708 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 14:50:29,807 - Initializing Spring embedded WebApplicationContext
+2019-07-24 14:50:29,807 - Root WebApplicationContext: initialization completed in 3334 ms
+2019-07-24 14:50:29,905 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 14:50:29,915 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 14:50:29,916 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 14:50:29,916 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 14:50:29,916 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 14:50:30,333 - {dataSource-1} inited
+2019-07-24 14:50:30,611 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:50:30,626 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 14:50:30,722 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 14:50:30,724 - HHH000206: hibernate.properties not found
+2019-07-24 14:50:30,783 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 14:50:31,039 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 14:50:31,756 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 14:50:34,106 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 14:50:34,196 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 14:50:34,197 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 14:50:34,197 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 14:50:34,200 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 14:50:34,201 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:50:34,201 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 14:50:34,201 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 14:50:34,201 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 14:50:34,201 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 14:50:34,202 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 14:50:34,203 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:50:34,203 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:50:34,203 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:50:34,204 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 14:50:34,205 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 14:50:34,205 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 14:50:34,205 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 14:50:34,206 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 14:50:34,207 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 14:50:34,207 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 14:50:34,208 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 14:50:34,208 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 14:50:34,208 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 14:50:34,208 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 14:50:34,210 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 14:50:34,213 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 14:50:34,214 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 14:50:34,214 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 14:50:34,220 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 14:50:34,220 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 14:50:34,652 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:50:34,717 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aecbb8d: startup date [Wed Jul 24 14:50:26 CST 2019]; root of context hierarchy
+2019-07-24 14:50:34,788 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:50:34,788 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 14:50:34,811 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 14:50:35,617 - Registering beans for JMX exposure on startup
+2019-07-24 14:50:35,621 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 14:50:35,630 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 14:50:35,636 - Starting beans in phase 2147483647
+2019-07-24 14:50:35,636 - Context refreshed
+2019-07-24 14:50:35,655 - Found 1 custom documentation plugin(s)
+2019-07-24 14:50:35,670 - Scanning for api listing references
+2019-07-24 14:50:35,899 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 14:50:35,943 - Using a shared selector for servlet write/read
+2019-07-24 14:50:35,973 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 14:50:35,980 - Started CwcabackApplication in 10.553 seconds (JVM running for 12.138)
+2019-07-24 14:50:50,020 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 14:50:50,020 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 14:50:50,062 - FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2019-07-24 14:50:50,510 - Starting without optional epoll library
+2019-07-24 14:50:50,514 - Starting without optional kqueue library
+2019-07-24 14:51:01,293 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563951061287}
+2019-07-24 14:51:33,848 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563951093848}
+2019-07-24 14:52:09,169 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563951129169}
+2019-07-24 14:52:17,867 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-24 14:52:17,916 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+### The error may exist in com/cwca/mapper/fbdeal/FbdealMapper.xml
+### The error may involve com.cwca.mapper.fbdeal.FbdealMapper.getAllFbdeal-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM fbdeal WHERE create_time = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+2019-07-24 14:52:27,180 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563951147180}
+2019-07-24 14:55:00,683 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563951300683}
+2019-07-24 15:00:14,988 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563951614988}
+2019-07-24 15:19:41,448 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563952781446}
+2019-07-24 15:24:58,741 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563953098741}
+2019-07-24 15:41:12,440 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563954072439}
+2019-07-24 15:49:00,326 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563954540325}
+2019-07-24 15:57:39,860 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955059860}
+2019-07-24 15:59:10,894 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955150894}
+2019-07-24 16:00:47,661 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955247661}
+2019-07-24 16:02:21,552 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955341551}
+2019-07-24 16:03:31,090 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955411090}
+2019-07-24 16:04:12,347 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955452347}
+2019-07-24 16:04:37,963 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955477963}
+2019-07-24 16:04:54,013 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955494013}
+2019-07-24 16:06:18,940 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955578939}
+2019-07-24 16:10:08,802 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955808798}
+2019-07-24 16:10:24,721 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955824720}
+2019-07-24 16:12:46,073 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563955966073}
+2019-07-24 16:13:20,031 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563956000031}
+2019-07-24 16:13:41,850 - 【token过期/未登录】Redis中查不到token
+2019-07-24 16:14:04,389 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563956044389}
+2019-07-24 16:14:50,810 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aecbb8d: startup date [Wed Jul 24 14:50:26 CST 2019]; root of context hierarchy
+2019-07-24 16:14:50,832 - Stopping beans in phase 2147483647
+2019-07-24 16:14:50,837 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 16:14:50,840 - Unregistering JMX-exposed beans
+2019-07-24 16:14:51,984 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 16:14:51,992 - {dataSource-1} closed
+2019-07-24 16:14:59,639 - Starting CwcabackApplication on macbookpro.local with PID 9533 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 16:14:59,641 - The following profiles are active: dev
+2019-07-24 16:14:59,715 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19553973: startup date [Wed Jul 24 16:14:59 CST 2019]; root of context hierarchy
+2019-07-24 16:15:00,897 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 16:15:01,019 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 16:15:01,040 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 16:15:01,041 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 16:15:01,042 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 16:15:01,623 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac5f4ef2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 16:15:02,409 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 16:15:02,424 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 16:15:02,437 - Starting service [Tomcat]
+2019-07-24 16:15:02,437 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 16:15:02,443 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 16:15:02,537 - Initializing Spring embedded WebApplicationContext
+2019-07-24 16:15:02,537 - Root WebApplicationContext: initialization completed in 2823 ms
+2019-07-24 16:15:02,646 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 16:15:02,655 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 16:15:02,658 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 16:15:02,659 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 16:15:02,659 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 16:15:03,023 - {dataSource-1} inited
+2019-07-24 16:15:03,285 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 16:15:03,299 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 16:15:03,383 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 16:15:03,385 - HHH000206: hibernate.properties not found
+2019-07-24 16:15:03,439 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 16:15:03,656 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 16:15:04,268 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 16:15:06,411 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 16:15:06,499 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 16:15:06,501 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 16:15:06,501 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 16:15:06,504 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 16:15:06,505 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 16:15:06,505 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 16:15:06,505 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 16:15:06,505 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 16:15:06,506 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 16:15:06,506 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 16:15:06,507 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 16:15:06,507 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 16:15:06,508 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 16:15:06,509 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 16:15:06,509 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 16:15:06,509 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 16:15:06,510 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 16:15:06,510 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 16:15:06,511 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 16:15:06,512 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 16:15:06,512 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 16:15:06,512 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 16:15:06,512 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 16:15:06,513 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 16:15:06,514 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 16:15:06,518 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 16:15:06,519 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 16:15:06,519 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 16:15:06,525 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 16:15:06,525 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 16:15:06,929 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 16:15:06,995 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19553973: startup date [Wed Jul 24 16:14:59 CST 2019]; root of context hierarchy
+2019-07-24 16:15:07,066 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 16:15:07,066 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 16:15:07,088 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 16:15:07,864 - Registering beans for JMX exposure on startup
+2019-07-24 16:15:07,866 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 16:15:07,875 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 16:15:07,881 - Starting beans in phase 2147483647
+2019-07-24 16:15:07,881 - Context refreshed
+2019-07-24 16:15:07,900 - Found 1 custom documentation plugin(s)
+2019-07-24 16:15:07,915 - Scanning for api listing references
+2019-07-24 16:15:08,151 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 16:15:08,184 - Using a shared selector for servlet write/read
+2019-07-24 16:15:08,209 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 16:15:08,215 - Started CwcabackApplication in 9.117 seconds (JVM running for 11.596)
+2019-07-24 16:17:47,898 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 16:17:47,898 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 16:17:47,941 - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2019-07-24 16:17:48,260 - Starting without optional epoll library
+2019-07-24 16:17:48,263 - Starting without optional kqueue library
+2019-07-24 16:17:48,494 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563956268470}
+2019-07-24 16:18:58,780 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563956338780}
+2019-07-24 16:24:12,200 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563956652200}
+2019-07-24 17:11:19,339 - 【token过期/未登录】Redis中查不到token
+2019-07-24 17:11:21,775 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563959481774}
+2019-07-24 17:11:54,806 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563959514806}
+2019-07-24 17:12:21,905 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563959541905}
+2019-07-24 17:19:55,234 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563959995234}
+2019-07-24 17:21:02,798 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960062798}
+2019-07-24 17:22:00,721 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960120721}
+2019-07-24 17:22:24,174 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960144174}
+2019-07-24 17:23:01,279 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960181279}
+2019-07-24 17:23:47,362 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960227362}
+2019-07-24 17:25:01,749 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960301748}
+2019-07-24 17:25:37,641 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960337641}
+2019-07-24 17:26:19,121 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960379121}
+2019-07-24 17:26:57,063 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960417062}
+2019-07-24 17:28:00,619 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960480619}
+2019-07-24 17:28:23,746 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":true,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960503746}
+2019-07-24 17:28:26,211 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2,"orderName":"id"}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960506211}
+2019-07-24 17:28:28,946 - {"action":"GetExamInfo","info":[{"auditDept":0,"isAsc":false,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960508946}
+2019-07-24 17:29:04,862 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960544862}
+2019-07-24 17:30:47,790 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960647790}
+2019-07-24 17:32:23,184 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960743184}
+2019-07-24 17:33:47,872 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563960827871}
+2019-07-24 17:37:59,998 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563961079998}
+2019-07-24 17:39:04,181 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563961144181}
+2019-07-24 21:18:40,105 - 【token过期/未登录】Redis中查不到token
+2019-07-24 21:45:02,195 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563975902194}
+2019-07-24 22:01:58,262 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563976918262}
+2019-07-24 22:12:12,657 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563977532657}
+2019-07-24 22:25:25,293 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563978325293}
+2019-07-24 22:25:52,870 - {"action":"GetExamInfo","info":[{"auditDept":0,"certificateType":"1","handlingType":"0","isJbr":true,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563978352870}
+2019-07-24 22:25:53,048 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-24 22:25:53,195 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+### The error may exist in com/cwca/mapper/examination/ExpressMapper.xml
+### The error may involve com.cwca.mapper.examination.ExpressMapper.getExpressListByIds-Inline
+### The error occurred while setting parameters
+### SQL: select *         from dc_express         where         apply_id in
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+2019-07-24 22:33:10,532 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563978790532}
+2019-07-24 22:37:22,500 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563979042500}
+2019-07-24 22:39:48,832 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563979188832}
+2019-07-24 22:40:10,627 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563979210627}
+2019-07-24 22:40:57,467 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563979257467}
+2019-07-24 22:41:37,140 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563979297140}
+2019-07-24 22:41:52,467 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563979312467}
+2019-07-24 22:44:18,388 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563979458388}
+2019-07-24 22:56:20,715 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980180715}
+2019-07-24 22:56:23,673 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980183673}
+2019-07-24 22:56:43,315 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980203315}
+2019-07-24 22:57:06,005 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980226005}
+2019-07-24 22:57:10,755 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980230755}
+2019-07-24 22:59:01,278 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980341278}
+2019-07-24 22:59:28,869 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980368869}
+2019-07-24 22:59:33,017 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":true,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980373017}
+2019-07-24 22:59:33,031 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+### The error may exist in com/cwca/mapper/examination/ExpressMapper.xml
+### The error may involve com.cwca.mapper.examination.ExpressMapper.getExpressListByIds-Inline
+### The error occurred while setting parameters
+### SQL: select *         from dc_express         where         apply_id in
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+2019-07-24 23:01:27,495 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980487495}
+2019-07-24 23:01:33,690 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+### The error may exist in com/cwca/mapper/fbdeal/FbdealMapper.xml
+### The error may involve com.cwca.mapper.fbdeal.FbdealMapper.getAllFbdeal-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM fbdeal WHERE create_time = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+2019-07-24 23:01:42,577 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980502577}
+2019-07-24 23:03:24,791 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980604790}
+2019-07-24 23:03:32,317 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980612317}
+2019-07-24 23:03:37,533 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980617533}
+2019-07-24 23:03:43,408 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980623408}
+2019-07-24 23:04:28,504 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+### The error may exist in com/cwca/mapper/fbdeal/FbdealMapper.xml
+### The error may involve com.cwca.mapper.fbdeal.FbdealMapper.getAllFbdeal-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM fbdeal WHERE create_time = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'digital_certificate.fbdeal' doesn't exist
+2019-07-24 23:05:36,906 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980736906}
+2019-07-24 23:06:10,528 - {"action":"GetExamInfo","info":[{"auditDept":0,"certificateType":"0","handlingType":"0","isJbr":true,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563980770528}
+2019-07-24 23:06:10,534 - 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+### The error may exist in com/cwca/mapper/examination/ExpressMapper.xml
+### The error may involve com.cwca.mapper.examination.ExpressMapper.getExpressListByIds-Inline
+### The error occurred while setting parameters
+### SQL: select *         from dc_express         where         apply_id in
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+2019-07-24 23:14:53,972 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19553973: startup date [Wed Jul 24 16:14:59 CST 2019]; root of context hierarchy
+2019-07-24 23:14:53,995 - Stopping beans in phase 2147483647
+2019-07-24 23:14:53,999 - Unregistering JMX-exposed beans on shutdown
+2019-07-24 23:14:54,001 - Unregistering JMX-exposed beans
+2019-07-24 23:14:55,163 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 23:14:55,171 - {dataSource-1} closed
+2019-07-24 23:15:04,504 - Starting CwcabackApplication on macbookpro.local with PID 10081 (/Users/wjn/Desktop/cwcaback/target/classes started by wjn in /Users/wjn/Desktop/cwcaback)
+2019-07-24 23:15:04,508 - The following profiles are active: dev
+2019-07-24 23:15:04,667 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19553973: startup date [Wed Jul 24 23:15:04 CST 2019]; root of context hierarchy
+2019-07-24 23:15:05,955 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 23:15:06,084 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-24 23:15:06,112 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyFileInfoDao.
+2019-07-24 23:15:06,114 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ApplyInfoDao.
+2019-07-24 23:15:06,115 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cwca.dao.ExpressDao.
+2019-07-24 23:15:06,768 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$998b1c7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-24 23:15:07,699 - Tomcat initialized with port(s): 8081 (http)
+2019-07-24 23:15:07,719 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-24 23:15:07,738 - Starting service [Tomcat]
+2019-07-24 23:15:07,738 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-07-24 23:15:07,745 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wjn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-24 23:15:07,859 - Initializing Spring embedded WebApplicationContext
+2019-07-24 23:15:07,859 - Root WebApplicationContext: initialization completed in 3192 ms
+2019-07-24 23:15:07,974 - Servlet dispatcherServlet mapped to [/]
+2019-07-24 23:15:07,981 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-24 23:15:07,984 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-24 23:15:07,986 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-24 23:15:07,987 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-24 23:15:08,428 - {dataSource-1} inited
+2019-07-24 23:15:08,709 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-24 23:15:08,730 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-24 23:15:08,851 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-24 23:15:08,853 - HHH000206: hibernate.properties not found
+2019-07-24 23:15:08,931 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-24 23:15:09,206 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-24 23:15:09,934 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-24 23:15:12,314 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-24 23:15:12,404 - Mapped "{[/article/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.getArticles(com.cwca.bean.article.Article)
+2019-07-24 23:15:12,406 - Mapped "{[/article/addarticle],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.addArticles(com.cwca.bean.article.Article)
+2019-07-24 23:15:12,406 - Mapped "{[/article/updatearticle],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.article.ArticleController.updateArticles(com.cwca.bean.article.Article)
+2019-07-24 23:15:12,409 - Mapped "{[/exam/print],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.print(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2019-07-24 23:15:12,409 - Mapped "{[/exam/transfer],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.transfer(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 23:15:12,410 - Mapped "{[/exam/passOneExam],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passExam(javax.servlet.http.HttpServletRequest,com.cwca.vo.ExamRequestVo)
+2019-07-24 23:15:12,410 - Mapped "{[/exam/applyInfoList],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.findApplyInfoList(javax.servlet.http.HttpServletRequest,com.cwca.bean.examination.ApplyInfo)
+2019-07-24 23:15:12,410 - Mapped "{[/exam/applyProcess],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.toApplyProcess(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-07-24 23:15:12,410 - Mapped "{[/exam/passApplyExam],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.examination.ExamDataController.passApply(javax.servlet.http.HttpServletRequest,com.alibaba.fastjson.JSONObject)
+2019-07-24 23:15:12,411 - Mapped "{[/fbdeal/list],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.fbdeal.FbDealController.getFbdeals(com.cwca.bean.fbdeal.FbdealParam)
+2019-07-24 23:15:12,412 - Mapped "{[/dblogin],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.dblogin(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletResponse)
+2019-07-24 23:15:12,412 - Mapped "{[/logout],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2019-07-24 23:15:12,412 - Mapped "{[/sysmenu],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SysConfigController.sysmenu(javax.servlet.http.HttpServletRequest)
+2019-07-24 23:15:12,413 - Mapped "{[/sys/basic/role/{rid}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.deleteRole(java.lang.Long)
+2019-07-24 23:15:12,414 - Mapped "{[/sys/basic/addrole],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.addNewRole(java.lang.String,java.lang.String)
+2019-07-24 23:15:12,414 - Mapped "{[/sys/basic/menuTree/{rid}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.menuTree(java.lang.Long)
+2019-07-24 23:15:12,414 - Mapped "{[/sys/basic/updateMenuRole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.updateMenuRole(java.lang.Long,java.lang.Long[])
+2019-07-24 23:15:12,414 - Mapped "{[/sys/basic/roles]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemRoleMenuController.allRoles()
+2019-07-24 23:15:12,416 - Mapped "{[/sys/users/{hrId}],methods=[DELETE]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.deleteHr(java.lang.Long)
+2019-07-24 23:15:12,416 - Mapped "{[/sys/users/reg],methods=[POST]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.hrReg(java.lang.String,java.lang.String)
+2019-07-24 23:15:12,416 - Mapped "{[/sys/users/updateuser],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHr(com.cwca.bean.User)
+2019-07-24 23:15:12,417 - Mapped "{[/sys/users/id/{hrId}],methods=[GET]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrById(java.lang.Long)
+2019-07-24 23:15:12,417 - Mapped "{[/sys/users/updateuserrole],methods=[PUT]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.updateHrRoles(java.lang.Long,java.lang.Long[])
+2019-07-24 23:15:12,417 - Mapped "{[/sys/users/{keywords}]}" onto public com.cwca.bean.common.RespBean com.cwca.controller.system.SystemUserController.getHrsByKeywords(java.lang.String)
+2019-07-24 23:15:12,419 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-07-24 23:15:12,422 - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-24 23:15:12,423 - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-24 23:15:12,424 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-24 23:15:12,428 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-24 23:15:12,429 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-24 23:15:12,869 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 23:15:12,942 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19553973: startup date [Wed Jul 24 23:15:04 CST 2019]; root of context hierarchy
+2019-07-24 23:15:13,017 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 23:15:13,017 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-24 23:15:13,040 - Detected @ExceptionHandler methods in templateExceptionHandler
+2019-07-24 23:15:13,920 - Registering beans for JMX exposure on startup
+2019-07-24 23:15:13,922 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-24 23:15:13,932 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-07-24 23:15:13,938 - Starting beans in phase 2147483647
+2019-07-24 23:15:13,938 - Context refreshed
+2019-07-24 23:15:13,963 - Found 1 custom documentation plugin(s)
+2019-07-24 23:15:13,979 - Scanning for api listing references
+2019-07-24 23:15:14,255 - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-24 23:15:14,284 - Using a shared selector for servlet write/read
+2019-07-24 23:15:14,306 - Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-24 23:15:14,312 - Started CwcabackApplication in 10.795 seconds (JVM running for 12.616)
+2019-07-24 23:17:06,279 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-24 23:17:06,280 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-24 23:17:06,368 - FrameworkServlet 'dispatcherServlet': initialization completed in 88 ms
+2019-07-24 23:17:06,653 - Starting without optional epoll library
+2019-07-24 23:17:06,657 - Starting without optional kqueue library
+2019-07-24 23:17:07,875 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981427855}
+2019-07-24 23:17:39,997 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981459997}
+2019-07-24 23:18:18,277 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981498277}
+2019-07-24 23:18:21,338 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981501338}
+2019-07-24 23:19:36,484 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981576484}
+2019-07-24 23:21:34,313 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981694313}
+2019-07-24 23:22:26,390 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981746390}
+2019-07-24 23:22:36,786 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":true,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981756786}
+2019-07-24 23:22:42,511 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981762511}
+2019-07-24 23:23:07,640 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981787640}
+2019-07-24 23:23:16,193 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981796193}
+2019-07-24 23:23:36,857 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":true,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1563981816857}
+2019-07-25 08:30:31,506 - 【token过期/未登录】Redis中查不到token
+2019-07-25 08:30:35,902 - {"action":"GetExamInfo","info":[{"auditDept":0,"isJbr":false,"isPass":2}],"remoteIp":"0:0:0:0:0:0:0:1","timestamp":1564014635902}
+2019-07-25 08:32:28,592 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19553973: startup date [Wed Jul 24 23:15:04 CST 2019]; root of context hierarchy
+2019-07-25 08:32:28,631 - Stopping beans in phase 2147483647
+2019-07-25 08:32:28,637 - Unregistering JMX-exposed beans on shutdown
+2019-07-25 08:32:28,639 - Unregistering JMX-exposed beans
+2019-07-25 08:32:29,792 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-25 08:32:29,807 - {dataSource-1} closed

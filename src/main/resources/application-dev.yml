@@ -1,0 +1,55 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/digital_certificate?characterEncoding=utf-8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+  jackson:
+    default-property-inclusion: non_null
+  cache:
+    type: REDIS
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 3
+    password: wjn..
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: 2ms
+        min-idle: 0
+server:
+  port: 8081
+
+
+#测试接口配置
+#支付
+pay:
+  #查询支付状态
+  checkPayStatusUrl: http://localhost:8084/pay/checkPayByIds
+  #手机端使用，默认电脑端配置
+  #client:
+  #returnUrl:
+#发票
+invoice:
+  #查询接口
+  findOneInvoiceUrl: http://localhost:8084/invoice/findOne
+  #查询发票信息
+  findInvoiceResultUrl: http://localhost:8084/invoice/findOneResult
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /var/log/tomcat/
+#  file: /var/log/tomcat/sell.log
+#  level:
+#    com.imooc.LoggerTest: debug
+
+
+#logging:
+#  level:
+#    com.imooc.dataobject.mapper: trace
+mybatis:
+  config-location: classpath:/mybatis-config.xml

@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: prod
+
+file:
+  staticAccessPath: http://218.95.167.155:8083/file
+
+#打印接口
+exam:
+  #打印接口
+  printUrl: http://218.95.167.155:8088/SF/order
+  #查询快递单号接口
+  findSFOrderIdUrl: http://218.95.167.155:8088/SF/findSFOrderId

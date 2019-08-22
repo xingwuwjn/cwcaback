@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cwca.mapper.MenuMapper">
+    <resultMap id="BaseResultMap" type="com.cwca.bean.Menu">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="redirect" property="redirect" jdbcType="VARCHAR"/>
+        <result column="path" property="path" jdbcType="VARCHAR"/>
+        <result column="component" property="component" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="parentId" property="parentId" jdbcType="INTEGER"/>
+        <result column="hidden" property="hidden" jdbcType="BOOLEAN"/>
+        <association property="meta" javaType="com.cwca.bean.MenuMeta">
+            <result column="nocache" property="nocache" jdbcType="BOOLEAN"/>
+            <result column="icon" property="icon"/>
+            <result column="title" property="title"/>
+        </association>
+        <collection property="roles" ofType="com.cwca.bean.Role">
+            <id column="rid" property="id"/>
+            <result column="rname" property="name"/>
+            <result column="rnamezh" property="nameZh"/>
+        </collection>
+        <collection property="children" ofType="com.cwca.bean.Menu">
+            <id column="id2" property="id"/>
+            <result column="path2" property="path" jdbcType="VARCHAR"/>
+            <result column="component2" property="component" jdbcType="VARCHAR"/>
+            <result column="name2" property="name" jdbcType="VARCHAR"/>
+            <result column="hidden2" property="hidden" jdbcType="BOOLEAN"/>
+            <association property="meta" javaType="com.cwca.bean.MenuMeta">
+                <result column="nocache2" property="nocache" jdbcType="BOOLEAN"/>
+                <result column="icon2" property="icon"/>
+                <result column="title2" property="title"/>
+            </association>
+            <collection property="children" ofType="com.cwca.bean.Menu">
+                <id column="id3" property="id"/>
+                <result column="name3" property="name" jdbcType="VARCHAR"/>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="getAllMenu" resultMap="BaseResultMap">
+        select m.*,r.id as rid,r.name as rname,r.nameZh as rnamezh from dc_admin_menu m left join dc_admin_menu_role mr on m.id=mr.mid left join dc_admin_role r on mr.rid=r.id WHERE m.hidden=false order by m.id desc
+    </select>
+
+    <select id="getMenusByHrId" parameterType="int" resultMap="BaseResultMap">
+        select m1.id,m1.redirect,m1.path,m1.component,m1.name,m1.hidden,m1.title,m1.icon,m1.nocache,
+        m2.component as component2,m2.icon as icon2,m2.nocache as nocache2,m2.name
+        as name2,m2.path as path2,m2.hidden as hidden2,m2.title as title2
+        from dc_admin_menu m1,dc_admin_menu m2 where m1.id=m2.parentId and m1.id!=1 and m2.id
+        in(select mr.mid from dc_admin_user_role u_r,dc_admin_menu_role mr where u_r.rid=mr.rid and u_r.hrid=#{hrId})
+        order by m1.id,m2.id
+    </select>
+
+    <select id="menuTree" resultMap="BaseResultMap">
+            select m1.id,m1.name,m2.id as id2,m2.name as name2,m3.id as id3,m3.name as name3
+             from dc_admin_menu m1,dc_admin_menu m2,dc_admin_menu m3 where m1.id=m2.parentId and m2.id=m3.parentId
+             and m3.hidden=false
+    </select>
+
+    <select id="getMenusByRid" resultType="int">
+        SELECT mid from dc_admin_menu_role WHERE rid=#{rid}
+    </select>
+
+</mapper>

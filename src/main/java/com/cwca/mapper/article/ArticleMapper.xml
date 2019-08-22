@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cwca.mapper.article.ArticleMapper">
+    <resultMap id="BaseResultMap" type="com.cwca.bean.article.Article">
+        <id column="id" property="id"/>
+        <result column="create_time" property="create_time"/>
+        <result column="author" property="author"/>
+        <result column="reviewer" property="reviewer"/>
+        <result column="title" property="title"/>
+        <result column="importance" property="importance"/>
+        <result column="readings" property="readings"/>
+        <result column="status" property="status"/>
+        <result column="type" property="type"/>
+    </resultMap>
+
+    <select id="getAllArticle" resultMap="BaseResultMap" parameterType="com.cwca.bean.article.Article">
+        select * from article
+        <where>
+            <if test="importance!=null and importance!=''">
+                AND importance = #{importance,jdbcType=INTEGER}
+            </if>
+            <if test="title!=null and title!=''">
+                AND title = #{title,jdbcType=VARCHAR}
+            </if>
+            <if test="type!=null and type!=''">
+                AND type = #{type,jdbcType=INTEGER}
+            </if>
+            <if test="create_time!=null and create_time!=''">
+                AND create_time &gt;=#{create_time,jdbcType=DATE}
+            </if>
+            <if test="end_time!=null and end_time!=''">
+                AND create_time &lt;=#{end_time,jdbcType=DATE}
+            </if>
+        </where>
+        <choose>
+            <when test="orderName != null and orderName !=''">
+                <choose>
+                    <when test="isAsc == true">
+                    order by ${orderName} ASC
+                    </when>
+                    <otherwise>
+                        order by ${orderName} DESC
+                    </otherwise>
+                </choose>
+            </when>
+            <otherwise>
+            order by id DESC
+            </otherwise>
+        </choose>
+    </select>
+
+    <update id="updateArticle" parameterType="com.cwca.bean.article.Article">
+        update article
+        <set>
+            <if test="author != null">
+                author=#{author,jdbcType=VARCHAR},
+            </if>
+            <if test="reviewer != null">
+                reviewer=#{reviewer,jdbcType=INTEGER},
+            </if>
+            <if test="title != null">
+                title=#{title,jdbcType=VARCHAR},
+            </if>
+            <if test="importance != null">
+                importance=#{importance,jdbcType=VARCHAR},
+            </if>
+            <if test="readings != null">
+                readings=#{readings,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                status=#{status,jdbcType=INTEGER},
+            </if>
+            <if test="type != null">
+                type=#{type,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <insert id="addArticle" parameterType="com.cwca.bean.article.Article">
+        insert into article
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="author != null">
+                author,
+            </if>
+            <if test="reviewer != null">
+                reviewer,
+            </if>
+            <if test="title != null">
+                title,
+            </if>
+            <if test="importance != null">
+                importance,
+            </if>
+            <if test="readings != null">
+                readings,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="type != null">
+                type,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="author != null">
+                #{author,jdbcType=VARCHAR},
+            </if>
+            <if test="reviewer != null">
+                #{reviewer,jdbcType=INTEGER},
+            </if>
+            <if test="title != null">
+                #{title,jdbcType=VARCHAR},
+            </if>
+            <if test="importance != null">
+                #{importance,jdbcType=VARCHAR},
+            </if>
+            <if test="readings != null">
+                #{readings,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="type != null">
+                #{type,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+</mapper>
